@@ -36,7 +36,7 @@ class AppTheme {
           elevation: 0,
           centerTitle: true,
         ),
-        tabBarTheme: const TabBarThemeData(
+        tabBarTheme: const TabBarTheme(
           labelColor: Colors.white,
           unselectedLabelColor: Color(0xAAFFFFFF),
           indicatorColor: goldLight,
