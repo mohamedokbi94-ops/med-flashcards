@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'utils/theme.dart';
 import 'utils/data.dart';
 import 'utils/storage.dart';
+import 'utils/update_service.dart';
 import 'models/models.dart';
 import 'screens/home_screen.dart';
 import 'screens/antibiotic_screen.dart';
@@ -46,7 +47,13 @@ class _RootPageState extends State<RootPage> {
 
   Future<void> _loadProgress() async {
     await StorageService.loadProgress(_courses);
-    if (mounted) setState(() => _loaded = true);
+    if (mounted) {
+      setState(() => _loaded = true);
+      // Check for updates after app loads
+      Future.delayed(const Duration(seconds: 2), () {
+        if (mounted) UpdateService.checkForUpdate(context);
+      });
+    }
   }
 
   @override
