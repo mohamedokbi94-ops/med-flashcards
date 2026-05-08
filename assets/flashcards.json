@@ -1,0 +1,1280 @@
+{
+  "cours": [
+    {
+      "id": 1,
+      "titre": "Méningite à Pneumocoque",
+      "flashcards": [
+        {
+          "q": "Quel est l'agent causal de la méningite à pneumocoque ?",
+          "r": "Streptococcus pneumoniae (diplocoque Gram positif, en flamme de bougie)"
+        },
+        {
+          "q": "Quelle est la place du pneumocoque parmi les causes de méningite bactérienne de l'adulte ?",
+          "r": "Deuxième cause après le méningocoque"
+        },
+        {
+          "q": "Quels sont les terrains prédisposants à la méningite à pneumocoque ?",
+          "r": "Aspléniques, traumatisés crâniens, âges extrêmes, BPC, cirrhose"
+        },
+        {
+          "q": "Quelles sont les portes d'entrée classiques ?",
+          "r": "Oto-mastoïdite, sinusite, infection respiratoire basse, traumatisme crânien"
+        },
+        {
+          "q": "Quelle est la durée de la phase d'invasion ?",
+          "r": "24 à 48 heures"
+        },
+        {
+          "q": "Quels sont les signes du syndrome méningé ?",
+          "r": "Céphalées en casque, vomissements en jet, photophobie, phonophobie, raideur de nuque"
+        },
+        {
+          "q": "Qu'est-ce que le signe de Kernig ?",
+          "r": "Impossibilité de fléchir à angle droit les MI sur le tronc sans provoquer douleur lombaire + flexion des genoux"
+        },
+        {
+          "q": "Qu'est-ce que le signe de Brudzinski ?",
+          "r": "La flexion antérieure de la nuque provoque la flexion des hanches et des genoux"
+        },
+        {
+          "q": "Quel est l'aspect du LCR dans la méningite à pneumocoque ?",
+          "r": "Trouble ou purulent, hypertendu, >1000 PNA/mm3, albumine >2g/l, hypoglycorrachie"
+        },
+        {
+          "q": "Quel est l'aspect direct du pneumocoque au LCR ?",
+          "r": "Diplocoque Gram positif en flamme de bougie, encapsulé, en paires"
+        },
+        {
+          "q": "Quelles sont les complications mécaniques de la méningite à pneumocoque ?",
+          "r": "Cloisonnement, HTIC, hydrocéphalie, épanchement sous-dural"
+        },
+        {
+          "q": "Quelle est la complication neurosensorielle la plus fréquente ?",
+          "r": "Surdité (souvent bilatérale)"
+        },
+        {
+          "q": "Quelles sont les particularités cliniques chez le nourrisson ?",
+          "r": "Tableau incomplet, fièvre inexpliquée, troubles digestifs, gémissements, bombement de la fontanelle"
+        },
+        {
+          "q": "Quelles sont les particularités chez le sujet âgé ?",
+          "r": "Signes trompeurs, céphalées banales, tableau psychiatrique fébrile, syndrome méningé inconstant"
+        },
+        {
+          "q": "Quel taux de méningites récidivantes est dû au pneumocoque ?",
+          "r": "90%"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titre": "Infections à Streptocoques",
+      "flashcards": [
+        {
+          "q": "Quels sont les 2 groupes de maladies dues aux streptocoques ?",
+          "r": "1) Streptococcies suppuratives (multiplication bactérienne) 2) Streptococcies non suppuratives (mécanisme immuno-allergique)"
+        },
+        {
+          "q": "Quelle est la morphologie du streptocoque ?",
+          "r": "Coccies Gram positif, arrondies, groupées en paires ou chaînettes, aéro-anaérobies facultatives"
+        },
+        {
+          "q": "Quelle est la classification de Lancefield ?",
+          "r": "Classification sérologique basée sur l'Ag polysaccharide C de la paroi, 20 groupes de A à H et K à T"
+        },
+        {
+          "q": "Quelles toxines sécrètent les streptocoques β-hémolytiques du groupe A ?",
+          "r": "Exotoxines érythrogènes A, B, C (responsables de la scarlatine) + enzymes : streptolysines O et S, hyaluronidases, streptokinases"
+        },
+        {
+          "q": "Qu'est-ce que les ASLO et quand sont-ils significatifs ?",
+          "r": "Antistreptolysines O. Taux >200 UI/ml = infection récente ou séroconversion (2 prélèvements à 15 jours)"
+        },
+        {
+          "q": "Quelle est la présentation clinique de l'angine streptococcique ?",
+          "r": "Début brutal, fièvre 39-40°C, dysphagie intense, amygdales tuméfiées, enduit pultacé facilement détachable"
+        },
+        {
+          "q": "Quel traitement de l'angine à streptocoque en 1ère intention ?",
+          "r": "Bêta-lactamines : Pénicilline V 3 Mui/j en 3 prises pendant 8 jours ou Amoxicilline 2g/j pendant 6 jours"
+        },
+        {
+          "q": "Quelles sont les complications tardives de l'angine streptococcique ?",
+          "r": "Syndromes post-streptococciques (RAA, GNA)"
+        },
+        {
+          "q": "Comment se transmet la scarlatine ?",
+          "r": "Contamination directe par voie aérienne à partir d'un scarlatin, porteur sain ou sujet atteint d'angine streptococcique"
+        },
+        {
+          "q": "Quelles sont les caractéristiques de l'exanthème scarlatineux ?",
+          "r": "Érythème diffus en nappe sans intervalle de peau saine, aspect granité à la palpation, signe de Pastia aux plis"
+        },
+        {
+          "q": "Qu'est-ce que le signe de Pastia ?",
+          "r": "Aspect ecchymotique au niveau des plis de flexion lors de la scarlatine"
+        },
+        {
+          "q": "Comment évolue la langue dans la scarlatine ?",
+          "r": "Initialement saburrale → rouge avec papilles saillantes (langue framboisée au 5-6ème jour) → lisse et vernissée"
+        },
+        {
+          "q": "Quelle est la phase de desquamation dans la scarlatine ?",
+          "r": "Débute au tronc (petites écailles), puis visage, puis membres en lambeaux (aspect en doigt de gant aux extrémités)"
+        },
+        {
+          "q": "Quelles sont les complications toxiniques précoces de la scarlatine ?",
+          "r": "Néphrite (protéinurie, hyperazotémie) et rhumatisme (poly-arthralgies)"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titre": "Sepsis à BGN",
+      "flashcards": [
+        {
+          "q": "Définition du sepsis à BGN ?",
+          "r": "Dysfonction d'organe menaçant le pronostic vital causée par une réponse inappropriée de l'hôte à une infection par un BGN"
+        },
+        {
+          "q": "Critères diagnostiques du sepsis (Sepsis-3) ?",
+          "r": "Infection suspectée ou documentée + augmentation du score SOFA ≥ 2 points"
+        },
+        {
+          "q": "Qu'est-ce que le qSOFA et quand est-il positif ?",
+          "r": "Quick SOFA : FR ≥ 22/min + altération conscience (GCS<15) + PAS ≤ 100 mmHg. Positif si ≥ 2 points"
+        },
+        {
+          "q": "Critères du choc septique à BGN ?",
+          "r": "Sepsis + hypotension persistante nécessitant vasopresseurs pour PAM ≥ 65 mmHg + lactatémie > 2 mmol/L"
+        },
+        {
+          "q": "Quels sont les principaux BGN responsables de sepsis ?",
+          "r": "E. coli, Klebsiella pneumoniae, Enterobacter, Serratia, Pseudomonas aeruginosa, Acinetobacter baumannii"
+        },
+        {
+          "q": "Quelle est la porte d'entrée la plus fréquente dans les sepsis à BGN ?",
+          "r": "Urinaire (pyélonéphrite, obstacle, sondage vésical)"
+        },
+        {
+          "q": "Quels sont les 2 signes cliniques évocateurs d'étiologie BGN ?",
+          "r": "Diarrhée et hyperventilation"
+        },
+        {
+          "q": "Qu'est-ce que l'ecthyma gangreneux d'Ehlers ?",
+          "r": "Lésion pathognomonique des septicémies à Pseudomonas : macule → papule → vésicule → escarre noirâtre entourée d'halo érythémateux"
+        },
+        {
+          "q": "Quels mécanismes physiopathologiques sont impliqués dans le choc à BGN ?",
+          "r": "LPS activent TLR4 → cytokines pro-inflammatoires (TNF-α, IL-1, IL-6) → activation coagulation (CIVD) → ischémie tissulaire"
+        },
+        {
+          "q": "Que contient le LPS des BGN et quel est son rôle ?",
+          "r": "Lipopolysaccharide de la membrane externe → active le système immunitaire et induit le SIRS et le choc"
+        },
+        {
+          "q": "Quel est le traitement du choc septique dans les premières 6h ?",
+          "r": "Remplissage 30 mL/kg cristalloïdes + noradrénaline (vasopresseur de 1ère ligne) + antibiothérapie empirique < 1h"
+        },
+        {
+          "q": "Quels sont les BGN multirésistants à connaître ?",
+          "r": "Producteurs de BLSE, carbapénémases (KPC, NDM, OXA-48), AmpC hyperproducteurs"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "titre": "Méningococcies",
+      "flashcards": [
+        {
+          "q": "Définition des méningococcies ?",
+          "r": "Infections invasives à Neisseria meningitidis : méningites cérébro-spinales, septicémies, rarement arthrites/péricardites/bronchopneumonies"
+        },
+        {
+          "q": "Caractères bactériologiques de Neisseria meningitidis ?",
+          "r": "Diplocoque Gram négatif en grain de café, encapsulé, très fragile dans le milieu extérieur, 13 sérogroupes"
+        },
+        {
+          "q": "Quels sérogroupes sont responsables des épidémies en Afrique ?",
+          "r": "A, C, W135, X (90% des méningococcies épidémiques en Afrique sub-saharienne)"
+        },
+        {
+          "q": "Quel sérogroupe est fréquent en Europe et en Algérie ?",
+          "r": "B (fréquent en Europe/France et USA). En Algérie : B, C, A, W135"
+        },
+        {
+          "q": "Quel est le réservoir et le mode de transmission ?",
+          "r": "Humain (malades, porteurs sains - 10-20% portage rhino-pharyngé). Transmission par gouttelettes de salive (Pflügge)"
+        },
+        {
+          "q": "Quelle est la durée de l'incubation de la MCS ?",
+          "r": "Silencieuse, 2 à 4 jours"
+        },
+        {
+          "q": "Quels sont les signes d'orientation (SHARP) ?",
+          "r": "SPM, Herpès labial, Arthralgies/arthrites, Rash morbilliforme, Purpura punctiforme ou généralisé"
+        },
+        {
+          "q": "Quels sont les signes cliniques de gravité dans la MCS ?",
+          "r": "Purpura généralisé extensif, choc septique, troubles neurologiques (convulsions, trouble de conscience, coma)"
+        },
+        {
+          "q": "Comment est le LCR dans la méningite à méningocoque ?",
+          "r": "Hypertendu, trouble/eau de riz/purulent, >1000 PNA/mm3, albumine >1g/l, hypoglycorrachie"
+        },
+        {
+          "q": "À l'examen direct du LCR, comment apparaît le méningocoque ?",
+          "r": "Cocci Gram négatif en grain de café, intra et extracellulaire"
+        },
+        {
+          "q": "Quelle est l'évolution sous traitement de la MCS ?",
+          "r": "Favorable dans 99% : apyrexie en 2-3 jours, disparition vomissements en 2j, guérison en 8-10 jours"
+        },
+        {
+          "q": "Quelle est la complication neurosensorielle la plus fréquente de la MCS ?",
+          "r": "Surdité bilatérale définitive"
+        },
+        {
+          "q": "Quelles sont les complications immuno-allergiques de la méningococcémie ?",
+          "r": "Péricardite, arthrites, iridocyclite (vers J5-J8 sous amoxicilline) → traitement par corticoïdes"
+        },
+        {
+          "q": "Comment se manifeste la méningite à méningocoque chez le nourrisson ?",
+          "r": "Atypique : fièvre inexpliquée, GEA, convulsion fébrile, refus de téter, FA bombante, nuque molle, hypotonie"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "titre": "Choc Septique",
+      "flashcards": [
+        {
+          "q": "Définition du choc septique (Sepsis-3, 2016) ?",
+          "r": "Sepsis + vasopresseurs pour PAM ≥ 65 mmHg + lactates > 2 mmol/l (18 mg/dl) malgré remplissage adéquat"
+        },
+        {
+          "q": "Quelle est la différence entre les définitions de 1992 et 2016 du sepsis ?",
+          "r": "1992: SIRS + infection. 2016 (Sepsis-3): dysfonction d'organe (SOFA ≥ 2) + réponse dérégulée à infection. SIRS et 'sepsis sévère' abandonnés"
+        },
+        {
+          "q": "Quels organes explore le score SOFA ?",
+          "r": "Respiratoire (PaO2), coagulation (plaquettes), hépatique (bilirubine), rénal (créatinine), cardiovasculaire (TA), neurologique (Glasgow)"
+        },
+        {
+          "q": "Quelle est la mortalité du choc septique ?",
+          "r": "Environ 40% (mortalité hospitalière du sepsis : 15-30%)"
+        },
+        {
+          "q": "Quelles bactéries sont les plus fréquentes dans le choc septique ?",
+          "r": "BGN (62%), Cocci Gram positif (46%), Candida (15%), Anaérobies (4%)"
+        },
+        {
+          "q": "Qu'est-ce que la phase hyperkinétique (choc chaud) ?",
+          "r": "PA systolique normale ou peu abaissée, tachycardie, extrémités chaudes, premiers signes viscéraux (polypnée, oligurie)"
+        },
+        {
+          "q": "Qu'est-ce que la phase hypokinétique (choc froid) ?",
+          "r": "PA systolique basse, tachycardie avec pouls filant, extrémités froides/cyanosées, marbrures, trouble conscience"
+        },
+        {
+          "q": "Quelles sont les conséquences rénales du choc septique ?",
+          "r": "Insuffisance rénale aiguë fonctionnelle évoluant vers l'organicité dans 10% des cas"
+        },
+        {
+          "q": "Qu'est-ce que le SDRA dans le choc septique ?",
+          "r": "Syndrome de détresse respiratoire aiguë : polypnée, cyanose, agitation → OAP lésionnel, hypoxémie, hypocapnie"
+        },
+        {
+          "q": "Quels sont les signes cliniques traduisant l'hypoperfusion tissulaire ?",
+          "r": "Marbrures (genoux), froideur des extrémités, pâleur/teint livide, TRC > 3 secondes, oligurie < 0.5 ml/kg/h"
+        },
+        {
+          "q": "Quel est le premier vasopresseur à utiliser dans le choc septique ?",
+          "r": "Noradrénaline en 1ère intention (adrénaline ou vasopressine en 2ème ligne)"
+        },
+        {
+          "q": "Quelles anomalies hématologiques peut-on voir dans le choc septique ?",
+          "r": "Thrombopénie + TP < 50% + fibrinogène < 3g/l = CIVD induite par l'endotoxine"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "titre": "Choléra",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que le choléra ?",
+          "r": "Toxi-infection intestinale aiguë, strictement humaine, hautement contagieuse, à transmission hydrique (péril fécal), déclaration obligatoire"
+        },
+        {
+          "q": "Quel est l'agent causal du choléra ?",
+          "r": "Vibrion cholérique (Vibrio cholerae), Bacille Gram négatif, très mobile (flagelle), sérogroupes O1 et O139"
+        },
+        {
+          "q": "Quels sont les 2 biotypes du sérogroupe O1 ?",
+          "r": "Classique (6 premières pandémies) et El Tor (7ème pandémie actuelle)"
+        },
+        {
+          "q": "Quels sont les 3 sérotypes du vibrion cholérique O1 ?",
+          "r": "Ogawa (ab), Inaba (ac), Hikojima (abc)"
+        },
+        {
+          "q": "Comment le vibrion produit-il la diarrhée ?",
+          "r": "Exotoxine entérotoxinique → stimulation adénylcyclase → ↑ AMPcyclique → ↑ sécrétion Cl- → fuite d'eau (diarrhée sécrétoire)"
+        },
+        {
+          "q": "Quelle est la durée de l'incubation du choléra ?",
+          "r": "4H à 5 jours (selon l'inoculum)"
+        },
+        {
+          "q": "Quelles sont les caractéristiques des selles dans le choléra ?",
+          "r": "Profuses, aqueuses, afécales, couleur eau de riz, flocons blanchâtres, 50-100 selles/j, 0.5-1L/h, sans glaires ni sang ni pus"
+        },
+        {
+          "q": "Quels sont les éléments cardinaux du choléra ?",
+          "r": "1. Conscient 2. Apyrétique 3. Pas de glaires 4. Pas de pus 5. Pas de sang"
+        },
+        {
+          "q": "Comment se présentent les signes de déshydratation dans le choléra ?",
+          "r": "Globes oculaires excavés, joues creuses, lèvres crispées, langue rôtie, peau atone avec pli cutané, voix bitonale"
+        },
+        {
+          "q": "Comment évolue le choléra sans traitement ?",
+          "r": "Toujours mortel par déshydratation (15-20%)"
+        },
+        {
+          "q": "Quelle est la complication métabolique principale du choléra ?",
+          "r": "Perte de bicarbonate → acidose métabolique ; perte de K+ → troubles du rythme cardiaque"
+        },
+        {
+          "q": "Quelle épidémie de choléra a touché l'Algérie récemment ?",
+          "r": "2018 : Blida, Bouira, Tipaza (74 cas, 2 décès, O1 sérotype Ogawa)"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "titre": "Fièvre Typhoïde",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que la fièvre typhoïde ?",
+          "r": "Toxi-infection à transmission hydrique endémo-épidémique due à Salmonella typhi ou paratyphi A, B, C"
+        },
+        {
+          "q": "Quelles sont les caractéristiques de Salmonella typhi ?",
+          "r": "BGN mobile aéroanaérobie facultatif, 3 antigènes : LPS somatique (O), flagellaire (H), capsulaire (Vi)"
+        },
+        {
+          "q": "Quel est le réservoir de la fièvre typhoïde ?",
+          "r": "Strictement humain : malades durant toute la maladie, convalescents, porteurs sains"
+        },
+        {
+          "q": "Quelle est la durée de l'incubation ?",
+          "r": "Silencieuse, variable, en moyenne 15 jours (7-21 jours)"
+        },
+        {
+          "q": "Comment progresse la fièvre au 1er septénaire ?",
+          "r": "Augmente par oscillations ascendantes de 1°C/jour (matin-soir), remonte à 39-40°C en fin de semaine"
+        },
+        {
+          "q": "Qu'est-ce que l'angine de Duguet ?",
+          "r": "Exulcération indolore, ovalaire, longitudinale, grand axe vertical, au niveau du pilier antérieur du voile du palais. Pathognomonique mais inconstante"
+        },
+        {
+          "q": "Qu'est-ce que le tuphos ?",
+          "r": "Obnubilation + stupeur, prostration, indifférence, insomnie nocturne et somnolence diurne avec délire vespéral, mouvements carphologiques"
+        },
+        {
+          "q": "Qu'est-ce que les taches rosées lenticulaires (TRL) ?",
+          "r": "Macules rosées de quelques mm, sans prurit, s'effaçant à la vitropression, siège : base du thorax, abdomen supérieur. Pathognomoniques"
+        },
+        {
+          "q": "Qu'est-ce que le signe de Faget ?",
+          "r": "Dissociation pouls/température (fièvre élevée sans tachycardie correspondante)"
+        },
+        {
+          "q": "Quand et comment se font les hémorragies intestinales dans la FT ?",
+          "r": "3ème septénaire. Minimes (pâleur, anémie) ou abondantes (melæna)"
+        },
+        {
+          "q": "Comment diagnostiquer une perforation intestinale dans la FT en tuphos ?",
+          "r": "NFS : hyperleucocytose à PNN + ASP : croissant clair gazeux sous diaphragmatique (pneumopéritoine)"
+        },
+        {
+          "q": "Quel examen diagnostique au 1er septénaire ?",
+          "r": "Hémoculture (positive dans 80-90% au 1er septénaire)"
+        },
+        {
+          "q": "Quel examen diagnostique au 2ème septénaire ?",
+          "r": "Coproculture (bactéries présentes dans les selles)"
+        },
+        {
+          "q": "Quelle est l'incidence de la FT en Algérie (2023) ?",
+          "r": "0.06 cas pour 100 000 habitants = 22 cas (2023)"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "titre": "Fièvre Typhoïde - Paratyphoïde",
+      "flashcards": [
+        {
+          "q": "Différence entre FT et fièvre paratyphoïde ?",
+          "r": "Paratyphoïde (S. paratyphi) : moins de signes toxiniques, tableau de TIAC, pas de TRL"
+        },
+        {
+          "q": "Quelle est la physiopathologie de la FT (résumé) ?",
+          "r": "Inoculum ≥ 10⁵ → intestin grêle (plaques de Peyer, 1ère multiplication) → canal thoracique → bactériémie + 2ème multiplication (foie, rate, MO) → libération endotoxines"
+        },
+        {
+          "q": "Quelles sont les formes selon le terrain ?",
+          "r": "Nourrisson : gastroentérite + déshydratation; Enfant : début brutal, NFS hyperleucocytose; Femme enceinte : avortements si non traitée; Vieillard : manifestations CV et pulmonaires"
+        },
+        {
+          "q": "Quelle est la mortalité de la FT selon le contexte ?",
+          "r": "< 1% si diagnostic et traitement précoces dans les pays développés. Jusqu'à 30% dans les PED avec retard diagnostique"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "titre": "Leptospirose",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que la leptospirose ?",
+          "r": "Anthropozoonose bactérienne due à des spirochètes du genre Leptospira, transmise par l'urine d'animaux infectés, tropisme hépatique, rénal et méningé"
+        },
+        {
+          "q": "Quelle espèce de Leptospira est pathogène pour l'homme ?",
+          "r": "Leptospira interrogans (saprophyte : Leptospira biflexa)"
+        },
+        {
+          "q": "Quel sérogroupe est responsable des formes les plus graves ?",
+          "r": "Leptospira ictero-haemorrhagiae"
+        },
+        {
+          "q": "Quel est le principal réservoir de la leptospirose ?",
+          "r": "Le rat et les rongeurs sauvages (porteurs sains). Aussi : chiens, bovins, porcs, moutons, chèvres"
+        },
+        {
+          "q": "Comment se fait la contamination chez l'homme ?",
+          "r": "Indirecte via excoriations cutanées ou muqueuses au contact d'eau/sol souillé par urines d'animaux infectés"
+        },
+        {
+          "q": "Quels sont les facteurs de risque professionnels ?",
+          "r": "Agriculteurs, égoutiers, employés abattoirs, pisciculteurs, jardiniers, éboueurs, loisirs aquatiques (kayak, rafting, pêche)"
+        },
+        {
+          "q": "Quelle est la sex-ratio de la leptospirose ?",
+          "r": "9/1 (prédominance masculine)"
+        },
+        {
+          "q": "Qu'est-ce que la leptospirose ictéro-hémorragique (maladie de Weil) ?",
+          "r": "Forme typique grave : fièvre + ictère 'flamboyant' (orangé) + syndrome rénal + syndrome hémorragique + syndrome méningé"
+        },
+        {
+          "q": "Qu'est-ce que la mnémotechnique RIMIS ?",
+          "r": "Les 5 syndromes de la leptospirose : Rénal, Ictère, Méningé, Infectieux, Sang (hémorragique)"
+        },
+        {
+          "q": "Comment est l'injection conjonctivale dans la leptospirose ?",
+          "r": "Bilatérale et très caractéristique (hyperhémie conjonctivale bilatérale)"
+        },
+        {
+          "q": "Quelle est la physiopathologie de la leptospirose ?",
+          "r": "2 phases : 1) Phase septicémique (bactériémie, dissémination foie/reins/LCR) 2) Phase immunologique (apparition IgM dès J8, élimination urinaire dès J12)"
+        },
+        {
+          "q": "Quels sont les marqueurs biologiques spécifiques ?",
+          "r": "Hyperleucocytose PNN, thrombopénie, hyperbilirubinémie conjuguée, transaminases élevées, CPK élevées (rhabdomyolyse), insuffisance rénale"
+        },
+        {
+          "q": "Quelle est la méthode de référence sérologique ?",
+          "r": "MAT (Microscopic Agglutination Test) ou Réaction de Martin et Petit. Positive dès J10, seuil 1/100"
+        },
+        {
+          "q": "Quels sont les facteurs de mauvais pronostic ?",
+          "r": "Ictère, insuffisance rénale aiguë, atteinte pulmonaire grave, troubles du rythme à l'ECG, altération conscience, âge > 60 ans"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "titre": "Dermohypodermites (DHAB)",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce qu'une dermohypodermite bactérienne ?",
+          "r": "Infection cutanée aiguë atteignant le derme et l'hypoderme, due principalement au streptocoque β-hémolytique du groupe A (85%)"
+        },
+        {
+          "q": "Quelle est la différence entre DHBNN et DHBN ?",
+          "r": "DHBNN (érysipèle) = non nécrosante, fréquente, bénigne, traitement ATB. DHBN (fasciite nécrosante) = urgence médico-chirurgicale, mortalité 30%"
+        },
+        {
+          "q": "Quels sont les facteurs de risque de l'érysipèle ?",
+          "r": "ATCD d'érysipèle, obésité, œdème (insuffisance veineuse/lymphatique), porte d'entrée cutanée (intertrigo inter-orteil +++)"
+        },
+        {
+          "q": "Quelle est la présentation classique de l'érysipèle ?",
+          "r": "Grosse jambe rouge aiguë fébrile : placard inflammatoire unilatéral avec bourrelet périphérique, début brutal, extension rapide"
+        },
+        {
+          "q": "Quelle est la localisation la plus fréquente de l'érysipèle ?",
+          "r": "Membres inférieurs (90%), puis visage (5-10%)"
+        },
+        {
+          "q": "Quel traitement de l'érysipèle en 1ère intention ?",
+          "r": "Amoxicilline 50 mg/kg/j en 3 prises pendant 7 jours per os. Si allergie : Pristinamycine 3g/j ou Clindamycine 600mg×3/j"
+        },
+        {
+          "q": "Quelles sont les complications à court terme de l'érysipèle ?",
+          "r": "Suppurations locales, sepsis, fasciite nécrosante (placards purpuriques, bulles hémorragiques, nécrose)"
+        },
+        {
+          "q": "Quelle complication à moyen terme après érysipèle ?",
+          "r": "Syndrome post-streptococcique : GNA (glomérulonéphrite aiguë) +++ , RAA"
+        },
+        {
+          "q": "Quels sont les critères d'hospitalisation urgente pour érysipèle ?",
+          "r": "Signes de gravité locaux ou généraux, risque décompensation comorbidité, obésité morbide (IMC>40), âge >75 ans poly-pathologique"
+        },
+        {
+          "q": "Comment prévenir les récidives d'érysipèle ?",
+          "r": "Traiter la porte d'entrée, contention veinoymphathique, antibioprophylaxie (benzathine benzyl-pénicilline G) si ≥2 épisodes/an"
+        },
+        {
+          "q": "Quels sont les facteurs de risque de la fasciite nécrosante ?",
+          "r": "Âge >60 ans, diabète déséquilibré, obésité (IMC>30), AOMI, toxicomanie IV, maladies cardiovasculaires, immunodépression"
+        },
+        {
+          "q": "Qu'est-ce que la gangrène de Fournier ?",
+          "r": "Fasciite nécrosante périnéale, favorisée par infections urinaires, sténose urétrale, infections dermatologiques périnéales"
+        },
+        {
+          "q": "Quel est le traitement de la fasciite nécrosante ?",
+          "r": "URGENCE médico-chirurgicale : débridement chirurgical large + ATB IV à fortes doses (14-21j) + réanimation"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "titre": "Infection à VIH",
+      "flashcards": [
+        {
+          "q": "Définition de l'infection à VIH ?",
+          "r": "Infection chronique par un rétrovirus (ARN) qui s'attaque aux LT CD4+. Transmission sexuelle (80%), sanguine, mère-enfant"
+        },
+        {
+          "q": "Définition du SIDA ?",
+          "r": "Ensemble de pathologies secondaires à un déficit immunitaire en rapport avec le VIH : infections opportunistes + cancers"
+        },
+        {
+          "q": "Quelle est la différence entre VIH-1 et VIH-2 ?",
+          "r": "VIH-1 = pandémique (mondial). VIH-2 = principalement en Afrique de l'Ouest"
+        },
+        {
+          "q": "Quel est le risque relatif de transmission par rapports homosexuels ?",
+          "r": "×22 (très haut risque)"
+        },
+        {
+          "q": "Quelle est la structure du VIH ?",
+          "r": "Virus enveloppé à ARN monocaténaire, famille des rétrovirus, cycle : attachement/fusion → transcription inverse → intégration → transcription/traduction → assemblage"
+        },
+        {
+          "q": "Quelles sont les modes de transmission mère-enfant ?",
+          "r": "In-utéro T2-T3 (5%), accouchement/voie basse (15%), allaitement naturel (10%). Prévention : ARV précoce + césarienne"
+        },
+        {
+          "q": "Quelle est l'IST qui multiplie le risque de transmission par 30 ?",
+          "r": "Les IST ulcérantes (×30). Multiplicité des partenaires ×13"
+        },
+        {
+          "q": "Quelle est la prévalence mondiale du VIH en 2023 ?",
+          "r": "39 millions de personnes vivant avec le VIH. 1.3 million nouvelles infections. 630 000 décès liés au SIDA"
+        },
+        {
+          "q": "Quel continent concentre le plus de cas de VIH ?",
+          "r": "Afrique orientale et australe (20.8 millions de personnes)"
+        },
+        {
+          "q": "Pourquoi n'y a-t-il pas de guérison avec le traitement ARV ?",
+          "r": "Le traitement réduit la charge virale et la transmission mais ne permet pas la guérison (réservoir viral persistant)"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "titre": "Coqueluche",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que la coqueluche ?",
+          "r": "Toxi-infection bactérienne de l'arbre respiratoire, strictement humaine, hautement contagieuse, déclaration obligatoire. Agent : Bordetella pertussis"
+        },
+        {
+          "q": "Caractères de Bordetella pertussis ?",
+          "r": "Coccobacille Gram négatif, encapsulé, aérobie strict, extracellulaire (sécrète toxines et adhésines), culture sur milieu Bordet-Gengou"
+        },
+        {
+          "q": "Quel est le mécanisme de la paralysie ciliaire dans la coqueluche ?",
+          "r": "Toxine cyto-trachéale : détruit le mécanisme de clairance ciliaire et empêche sa réparation"
+        },
+        {
+          "q": "Quelle est la durée de l'incubation ?",
+          "r": "En moyenne 10 jours (7 à 21 jours), silencieuse"
+        },
+        {
+          "q": "Qu'est-ce que la phase catarrhale ?",
+          "r": "Très contagieuse ! Durée 1-2 semaines. Toux banale, rhinorrhée, fièvre modérée < 38.5°C (ressemble à une infection virale)"
+        },
+        {
+          "q": "Comment se définit une quinte de coqueluche ?",
+          "r": "Secousses expiratoires répétées (cyanose) → apnée → reprise inspiratoire profonde (chant du coq) → expectoration → répétition 4-5 fois"
+        },
+        {
+          "q": "Quelle est la fréquence maximale des quintes ?",
+          "r": "Jusqu'à 50 fois par jour, à prédominance nocturne"
+        },
+        {
+          "q": "Quel est le tableau biologique caractéristique de la coqueluche ?",
+          "r": "FNS : hyperleucocytose avec hyperlymphocytose (60-90%). CRP normale ou peu élevée (maladie toxinique)"
+        },
+        {
+          "q": "Comment confirmer le diagnostic biologique de coqueluche ?",
+          "r": "Écouvillonnage nasopharyngé pour : culture (PCR+++), ou sérologie (anticorps spécifiques anti-Bordetella pertussis)"
+        },
+        {
+          "q": "Quelle est la forme grave chez le nourrisson < 3 mois ?",
+          "r": "Forme maligne apneisante : tachycardie >200 bpm, détresse respiratoire, hyperlymphocytose majeure, mortalité 75%"
+        },
+        {
+          "q": "Quelles sont les complications respiratoires de la coqueluche ?",
+          "r": "Pneumo-coqueluche, bronchopneumonie suraiguë, emphysème, dilatation des bronches, laryngite, pleurésie"
+        },
+        {
+          "q": "Quelles sont les complications mécaniques de la coqueluche ?",
+          "r": "Ulcération frein de langue, purpura cervico-facial, hémorragies conjonctivales, prolapsus rectal, hernie ombilicale"
+        },
+        {
+          "q": "L'antibiothérapie est-elle efficace dans toutes les phases ?",
+          "r": "Non, efficace seulement en phase catarrhale. En phase de quintes, elle réduit la contagiosité mais pas la durée des quintes"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "titre": "Paludisme",
+      "flashcards": [
+        {
+          "q": "Quelles sont les 5 espèces de Plasmodium pathogènes pour l'homme ?",
+          "r": "P. falciparum, P. vivax, P. malariae, P. ovale, P. knowlesi"
+        },
+        {
+          "q": "Quelle espèce est la plus grave et pourquoi ?",
+          "r": "P. falciparum : schizogonie dans les capillaires viscéraux (notamment cérébraux), parasite toutes les hématies, parasitémie potentiellement élevée"
+        },
+        {
+          "q": "Comment se transmet le paludisme ?",
+          "r": "Piqûre de l'anophèle femelle (indolore, nocturne). Rarement : transfusion, greffe, transplacentaire, toxicomanie IV"
+        },
+        {
+          "q": "Quelle est la durée d'incubation selon l'espèce ?",
+          "r": "P. falciparum : 7-14j, P. vivax : 10-20j, P. ovale : 15-18j, P. malariae : 18-40j, P. knowlesi : 10-15j"
+        },
+        {
+          "q": "Qu'est-ce que l'accès palustre de reviviscence ?",
+          "r": "Trilogie stéréotypée : frissons (1h) → chaleur 40-41°C (3-4h) → sueurs abondantes (2-4h). Se répète selon un rythme régulier"
+        },
+        {
+          "q": "Quelle est la périodicité des accès selon l'espèce ?",
+          "r": "Tierce (J1-J3-J5) pour P. falciparum, P. vivax, P. ovale. Quarte (J1-J4-J7) pour P. malariae. Tous les jours pour P. knowlesi"
+        },
+        {
+          "q": "Qu'est-ce que le paludisme grave ?",
+          "r": "Apanage de P. falciparum. Au moins 1 critère OMS : coma (neuropaludisme), convulsions, hypoglycémie, insuffisance rénale, SDRA, anémie sévère..."
+        },
+        {
+          "q": "Qu'est-ce que la prémunition ?",
+          "r": "Immunité relative acquise progressivement en 5-10 ans, labile (disparaît en 12-24 mois si quitte la zone). Équilibre hôte-parasite"
+        },
+        {
+          "q": "Comment diagnostique-t-on le paludisme ?",
+          "r": "Frottis sanguin + goutte épaisse (visualisation du plasmodium). TDR (test diagnostic rapide). PCR"
+        },
+        {
+          "q": "Qu'est-ce que la fièvre bilieuse hémoglobinurique ?",
+          "r": "Complication rare d'hémolyse aiguë chez sujets vivant en zone endémique sous prophylaxie incomplète par quinine/méfloquine"
+        },
+        {
+          "q": "Quel est le risque du paludisme chez la femme enceinte ?",
+          "r": "Fréquent surtout au 3ème trimestre, grave : avortement, accouchement prématuré, hypotrophie fœtale"
+        },
+        {
+          "q": "Quelle est la situation du paludisme en Algérie ?",
+          "r": "Quelques foyers résiduels autochtones (Djanet, Ain Defla, Ouargla). La majorité des cas sont des paludismes d'importation (98%)"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "titre": "Toxoplasmose",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que la toxoplasmose ?",
+          "r": "Anthropozoonose cosmopolite due à Toxoplasma gondii (protozoaire intracellulaire). Hôte définitif : chat. Bénigne chez l'immunocompétent, grave chez l'immunodéprimé et la femme enceinte séronégative"
+        },
+        {
+          "q": "Quelles sont les 3 formes de Toxoplasma gondii ?",
+          "r": "1) Tachyzoïte (trophozoïte) : phase aiguë, fragile. 2) Bradyzoïte dans kyste : phase chronique, tissus nerveux/musculaire/rétine. 3) Oocyste : forme sexuée résistante, dans l'intestin du chat"
+        },
+        {
+          "q": "Quelles sont les voies de contamination de l'homme ?",
+          "r": "1) Ingestion oocystes (crudités, eau souillée, litière de chat) 2) Ingestion de kystes (viande crue/mal cuite) 3) Voie transplacentaire (primo-infection maternelle)"
+        },
+        {
+          "q": "Comment se présente la toxoplasmose chez l'immunocompétent ?",
+          "r": "80% asymptomatique. Si symptomatique : fièvre modérée 38°C, polyadénopathies cervicales, asthénie, myalgies. Biologie : syndrome mononucléosique. Évolution bénigne"
+        },
+        {
+          "q": "À quel taux de CD4 survient la neurotoxoplasmose chez le VIH ?",
+          "r": "CD4 < 200/mm³"
+        },
+        {
+          "q": "Quel est l'aspect typique de la neurotoxoplasmose à l'imagerie ?",
+          "r": "Image en cocarde : centre hypodense (nécrose) entouré d'hyperdensité prenant le contraste, halo hypodense périphérique (œdème) à la TDM/IRM"
+        },
+        {
+          "q": "Comment la toxoplasmose congénitale varie-t-elle selon le trimestre ?",
+          "r": "1er trimestre : rare mais très grave (encéphalomyélite, calcifications intracrâniennes, hydrocéphalie). 3ème trimestre : fréquent mais moins grave, souvent latent"
+        },
+        {
+          "q": "Quand les IgM et IgG apparaissent-ils dans la toxoplasmose ?",
+          "r": "IgM : dès J7 (disparaissent en 12 mois). IgA : disparaissent en 3-6 mois. IgG : J7-21 après IgM, maximum à 2 mois, persistent à vie"
+        },
+        {
+          "q": "Quelle est la triade de la toxoplasmose congénitale grave ?",
+          "r": "Hydrocéphalie + choriorétinite + calcifications intracrâniennes"
+        },
+        {
+          "q": "Quel est le principal moyen de prévention chez la femme enceinte séronégative ?",
+          "r": "Hygiène alimentaire : éviter viande crue, laver les crudités, éviter contact litière de chat, se laver les mains"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "titre": "Fièvre Boutonneuse Méditerranéenne (FBM)",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que la FBM ?",
+          "r": "Infection due à Rickettsia conorii (cocco-bacille Gram négatif intracellulaire strict), transmise par la tique du chien Rhipicephalus sanguineus"
+        },
+        {
+          "q": "Quel est le vecteur de la FBM ?",
+          "r": "La tique du chien Rhipicephalus sanguineus (acarien hématophage), transmission après 20h de fixation"
+        },
+        {
+          "q": "Quelle est la période de survenue de la FBM ?",
+          "r": "Estivale (mai à septembre), pourtour méditerranéen"
+        },
+        {
+          "q": "Quelle est la physiopathogénie de la FBM ?",
+          "r": "Inoculation par la tique → pénétration dans les cellules endothéliales des petits vaisseaux → multiplication → vascularite + bactériémie"
+        },
+        {
+          "q": "Quelle est la durée de l'incubation ?",
+          "r": "3 à 16 jours (6 jours en moyenne)"
+        },
+        {
+          "q": "Qu'est-ce que la tache noire de Pieri ?",
+          "r": "Escarre d'inoculation : papule avec croûte noirâtre entourée d'un halo congestif (brûlure de cigarette). Retrouvée dans 50% des cas, indolore"
+        },
+        {
+          "q": "Quelles sont les caractéristiques de l'éruption dans la FBM ?",
+          "r": "Constante, débute aux membres inférieurs, n'épargne pas les paumes ni plantes, éléments arrondis 0.5-1.5 cm séparés par peau saine, couleur rose → rouge → violet → brun"
+        },
+        {
+          "q": "Quel est le score de diagnostic de la FBM ? Quand est-il positif ?",
+          "r": "> 25 points = compatible avec un diagnostic présomptif de FBM. Points importants : fièvre >39°C (5pts), escarre (5pts), éruption (5pts), isolement R. conorii (25pts)"
+        },
+        {
+          "q": "Quelle est l'évolution sous traitement ?",
+          "r": "Température normale en 2-3 jours, éruption pâlit rapidement, guérison en une semaine, convalescence très courte"
+        },
+        {
+          "q": "Quelles sont les formes cliniques graves ?",
+          "r": "Formes traitées tardivement ou sur terrain affaibli (sujet âgé, diabétique, immunodéprimé) : complications cardiaques, rénales, pulmonaires, neurologiques, ophtalmologiques"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "titre": "Diarrhées Infectieuses et TIAC",
+      "flashcards": [
+        {
+          "q": "Définition de la TIAC ?",
+          "r": "Toxi-Infection Alimentaire Collective : apparition d'au moins 2 cas similaires de symptomatologie digestive (parfois neurologique) chez des personnes ayant partagé le même repas"
+        },
+        {
+          "q": "Définition de la diarrhée selon l'OMS ?",
+          "r": "> 3 selles par jour. Ou émission > 300g/j d'eau dans les selles"
+        },
+        {
+          "q": "Qu'est-ce que le syndrome cholériforme ?",
+          "r": "Diarrhée aqueuse profuse 'eau de riz', vomissements, déshydratation, PAS de fièvre. Mécanisme : toxinogène (ex: Vibrio cholerae, ETEC, Staph. aureus)"
+        },
+        {
+          "q": "Qu'est-ce que le syndrome dysentérique ?",
+          "r": "Diarrhée sanglante, fausses membranes, épreintes, ténesme, FIEVRE. Mécanisme : invasion/destruction (ex: Shigelles, EIEC)"
+        },
+        {
+          "q": "Qu'est-ce que le syndrome gastro-entéritique ?",
+          "r": "Signes d'invasion + fièvre + douleurs abdominales. Mécanisme : invasion sans destruction (ex: Salmonella)"
+        },
+        {
+          "q": "Quels agents produisent des entérotoxines dans les TIAC ?",
+          "r": "ECET, Aeromonas hydrophila, Campylobacter, Salmonella typhimurium → ↑ AMPc → ↑ sécrétion Cl- → fuite d'eau"
+        },
+        {
+          "q": "Quelles bactéries ont le plus faible inoculum minimum pour provoquer une infection ?",
+          "r": "Shigelles (inoculum très bas)"
+        },
+        {
+          "q": "Quelle est la démarche diagnostique devant une diarrhée infectieuse ?",
+          "r": "1) Rechercher les signes de gravité 2) Affirmer le diagnostic par interrogatoire et examen clinique 3) Approche étiologique"
+        },
+        {
+          "q": "Quelle est l'incidence des TIAC en Algérie (2023) ?",
+          "r": "1000 à 3000 cas/an, une dizaine de décès, 80% en été (juin-août), fréquents dans fast-food/restaurants/fêtes"
+        },
+        {
+          "q": "Quels germes causent des diarrhées invasives avec ulcération ?",
+          "r": "Par mécanisme direct : Shigelles, EIEC. Par toxines : EHEC, Clostridium difficile"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "titre": "Brucellose",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que la brucellose ?",
+          "r": "Anthropozoonose bactérienne cosmopolite (= Fièvre de Malte) due à des coccobacilles du genre Brucella. Homme = hôte accidentel"
+        },
+        {
+          "q": "Quelles sont les 4 espèces pathogènes pour l'homme ?",
+          "r": "B. melitensis (caprins/ovins, la plus grave), B. abortus (bovins), B. suis (porcins), B. canis (chiens)"
+        },
+        {
+          "q": "Quelle est l'incidence mondiale de la brucellose ?",
+          "r": "500 000 nouveaux cas/an (OMS). Mortalité < 2%"
+        },
+        {
+          "q": "Quels sont les groupes à risque ?",
+          "r": "Éleveurs, vétérinaires, personnel d'abattoirs, laborantins, ruraux consommant du lait cru ou produits laitiers non pasteurisés"
+        },
+        {
+          "q": "Comment se fait la contamination directe ?",
+          "r": "Au contact d'animaux infectés ou leurs sécrétions (placentas, produits d'avortement, urine, lait, sécrétions vaginales) → pénétration transcutanée, conjonctivale ou aérienne"
+        },
+        {
+          "q": "Quelle est la triade classique de la brucellose aiguë ?",
+          "r": "Fièvre ondulante + sueurs nocturnes abondantes (odeur de paille pourri) + syndrome algique (arthralgies genoux, myalgies, talalgie)"
+        },
+        {
+          "q": "Quels sont les signes à l'examen clinique de la brucellose aiguë ?",
+          "r": "Splénomégalie molle indolore, hépatomégalie (1/3), adénopathies, orchite/orchi-épididymite très douloureuse, sacro-iléite"
+        },
+        {
+          "q": "Qu'est-ce que la sacro-iléite brucellosique ?",
+          "r": "Très évocatrice de brucellose chez le sujet jeune, unilatérale (parfois bilatérale), carie de la berge iliaque à la radiologie"
+        },
+        {
+          "q": "Qu'est-ce que la brucellose subaiguë focalisée ?",
+          "r": "Succède à une brucellose aiguë non/incorrectement traitée. Fébricule + sueurs + asthénie + localisations ostéo-articulaires (10-85%) ou neurologiques"
+        },
+        {
+          "q": "Quelle est la particularité bactériologique de Brucella ?",
+          "r": "Intracellulaire facultatif (survit dans monocytes/macrophages toute la vie) → quasi impossible de stériliser les foyers profonds"
+        },
+        {
+          "q": "Pourquoi ne peut-on pas affirmer la guérison définitive de la brucellose ?",
+          "r": "Capacité des brucelles à survivre à l'intérieur des macrophages toute la vie → rechutes possibles"
+        },
+        {
+          "q": "Quelle est la situation épidémiologique en Algérie ?",
+          "r": "Endémo-épidémique, incidence 20.61/100 000 (2024). Pic mai-juillet. Wilayas : Djelfa, M'sila, El Bayadh, Laghouat, Biskra, Médéa"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "titre": "Amoebose",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que l'amoebose ?",
+          "r": "Infection parasitaire du côlon par Entamoeba histolytica (protozoaire). Maladie du péril fécal. MDO en Algérie"
+        },
+        {
+          "q": "Quelles sont les 2 formes de trophozoïtes ?",
+          "r": "1) Minuta (non hématophage, non pathogène) = amibiase-infection. 2) Histolytica (hématophage, pathogène) = amibiase-maladie"
+        },
+        {
+          "q": "Comment se transmet l'amibiase ?",
+          "r": "Via les kystes (mains sales, sol/eau/aliments souillés par excréta, mouches). Réservoir : porteur asymptomatique"
+        },
+        {
+          "q": "Quelle est la prévalence mondiale de l'amoebose ?",
+          "r": "50 millions de cas avec 40 000 décès par an"
+        },
+        {
+          "q": "Quelle est la triade de la dysenterie amibienne ?",
+          "r": "Ténesme (tension douloureuse anale avec faux besoins) + Épreintes (douleurs abdominales paroxystiques du cadre colique) + Diarrhée glairo-sanglante afécale"
+        },
+        {
+          "q": "Quelles sont les caractéristiques des selles dans la dysenterie amibienne ?",
+          "r": "10-15 selles/jour, afécales, glairo-sanglantes 'crachat rectal sans pus', SANS fièvre, SANS déshydratation, EG conservé"
+        },
+        {
+          "q": "Quelle est la triade de l'amoebose hépatique (triade de Fontan) ?",
+          "r": "Fièvre élevée (>39°C) + Hépatomégalie douloureuse + ébranlement hépatique à la percussion"
+        },
+        {
+          "q": "Quel examen de première intention pour l'abcès amibien du foie ?",
+          "r": "Échographie abdominale +++ : image hypodense liquidienne. TDM si échographie non contributive (abcès du dôme)"
+        },
+        {
+          "q": "Quels sont les marqueurs biologiques de l'amoebose hépatique ?",
+          "r": "Hyperleucocytose à PNN, CRP > 150 mg/L, VS très accélérée"
+        },
+        {
+          "q": "Quelle est l'évolution de l'amoebose hépatique sous traitement ?",
+          "r": "Fièvre et douleurs disparaissent en 3j, VS réduite de moitié en 72H, les images échographiques se normalisent en 1 an"
+        },
+        {
+          "q": "Quelles sont les localisations extra-intestinales autres que le foie ?",
+          "r": "Pleuro-pulmonaire (couple hépato-pulmonaire), cérébrale (rare), péricardique (urgence), cutanée (ano-génitale)"
+        },
+        {
+          "q": "Quel est le traitement de l'amibiase ?",
+          "r": "Anti-amibiens tissulaires (métronidazole) + anti-amibiens de contact (tiliquinol, tibroquinol)"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "titre": "Diphtérie",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que la diphtérie ?",
+          "r": "Toxi-infection bactérienne hautement contagieuse, strictement humaine, due à Corynebacterium diphtheriae (bacille de Klebs-Loëffler, Gram positif)"
+        },
+        {
+          "q": "Quelles sont les 3 espèces de Corynebacterium pathogènes pour l'homme ?",
+          "r": "C. diphtheriae (+++), C. ulcerans, C. pseudotuberculosis (ces 2 dernières sont des zoonoses)"
+        },
+        {
+          "q": "Quel est le mécanisme de la gravité de la diphtérie ?",
+          "r": "La toxine diphtérique (exotoxine diffusant dans le sang) est responsable des complications : myocardite, paralysies, néphrite. Seules les bactéries 'tox+' la produisent"
+        },
+        {
+          "q": "Quelles sont les 4 caractéristiques des fausses membranes diphtériques ?",
+          "r": "1) Extensives 2) Adhérentes (arrachement saignant) 3) Cohérentes (résistent à l'écrasement) 4) Récidivantes (rapidement reproductibles)"
+        },
+        {
+          "q": "Quelle est la fièvre dans la diphtérie ?",
+          "r": "Modérée : 38-38.5°C (contrastant avec la gravité locale)"
+        },
+        {
+          "q": "Quelle est la complication cardiaque de la diphtérie ?",
+          "r": "Myocardite (Syndrome malin secondaire de Marfan) : précoce (4-10j), grave, tachycardie/bradycardie/troubles du rythme, cause de décès si avant le 15ème jour"
+        },
+        {
+          "q": "Quelles sont les paralysies diphtériques ?",
+          "r": "Syndrome malin tardif de Grenet et Mazard : précoces (2-3 semaines) ou tardives (2-3 mois), réversibles, gravité si atteinte respiratoire"
+        },
+        {
+          "q": "Quel est le traitement urgent de la diphtérie ?",
+          "r": "Sérothérapie + antibiothérapie (pénicilline G ou amoxicilline ou érythromycine) SANS attendre les résultats biologiques"
+        },
+        {
+          "q": "Quelle est la situation épidémiologique en Algérie ?",
+          "r": "Depuis PEV 1970. Épidémie 1993-1996 (>1900 cas, 50 décès). En 2024 : recrudescence dans le sud (Tamanrasset) : 115 cas, 28 décès"
+        },
+        {
+          "q": "Quelle est la situation mondiale en 2025 ?",
+          "r": "OMS : 25 millions n'ont pas reçu le VAD. Épidémie en Somalie (1616 cas/87 décès). Europe : 536 cas en 2022 (surtout migrants)"
+        },
+        {
+          "q": "Quelle est la durée de convalescence sous traitement ?",
+          "r": "Surveillance de 90 jours (fausses membranes tombent en 48h-5j, fièvre disparaît en 3j, mais complications toxiniques entre 8j et 3 mois)"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "titre": "Rage",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que la rage ?",
+          "r": "Zoonose à transmission accidentelle à l'homme. Encéphalomyélite constamment fatale une fois déclarée. Priorité de santé publique. MDO"
+        },
+        {
+          "q": "Quel est l'agent causal de la rage ?",
+          "r": "Lyssavirus de la famille des Rhabdoviridae. Virus à ARN monocaténaire enveloppé, fragile (détruit par savon, antiseptiques, chaleur, lumière)"
+        },
+        {
+          "q": "Quels sont les 3 cycles épidémiologiques de la rage ?",
+          "r": "1) Rage canine (pays d'Afrique, Asie, Amérique latine) 2) Rage selvatique (renards, loups, ratons laveurs) 3) Rage des chiroptères (chauves-souris)"
+        },
+        {
+          "q": "Quel animal est responsable de 99% des cas de rage humaine ?",
+          "r": "Le chien errant"
+        },
+        {
+          "q": "Comment évolue la rage dans le système nerveux ?",
+          "r": "Point d'inoculation → multiplication dans muscle strié → fixation aux terminaisons nerveuses → transport rétrograde axonal (8-22 mm/j) → SNC → diffusion centrifuge vers SN périphérique et glandes salivaires"
+        },
+        {
+          "q": "Pourquoi la durée d'incubation varie-t-elle ?",
+          "r": "D'autant plus courte que la morsure est : proche du SNC (visage), dans une zone richement innervée (doigts, organes génitaux), ou que l'inoculum est massif"
+        },
+        {
+          "q": "Quelles sont les caractéristiques de la phase prodromique de la rage ?",
+          "r": "2 à 10 jours : douleurs/paresthésies au niveau de la région mordue + troubles du comportement (anxiété, insomnie) + fièvre 38-39°C"
+        },
+        {
+          "q": "Qu'est-ce que l'hydrophobie et l'aérophobie dans la rage ?",
+          "r": "Spasmes pharyngo-laryngés violents et douloureux déclenchés par la vue de l'eau (hydrophobie) ou par un courant d'air (aérophobie)"
+        },
+        {
+          "q": "Quelle est l'évolution de la rage déclarée ?",
+          "r": "Constamment fatale : coma → paralysie cardiorespiratoire en 3-4 jours (rage furieuse) ou 5-6 jours (rage paralytique)"
+        },
+        {
+          "q": "Quel est le traitement local immédiat d'une morsure animale ?",
+          "r": "Lavage au savon de Marseille + rinçage jet d'eau 15 min + eau javellisée + alcool 70° ou povidone iodée. Éviter la suture si possible"
+        },
+        {
+          "q": "Quels sont les 2 schémas vaccinaux antirabiques reconnus par l'OMS (verorab) ?",
+          "r": "Essen : J0-J3-J7-J14-J28 (IM). Zagreb : 2 injections J0 + J7 + J21 (IM)"
+        },
+        {
+          "q": "Quelle est la durée d'observation vétérinaire de l'animal mordeur ?",
+          "r": "14 jours (animaux contaminants 5-7 jours avant les 1ers symptômes)"
+        },
+        {
+          "q": "Qu'est-ce que l'immunodéprimé doit obligatoirement recevoir en post-exposition ?",
+          "r": "Immunoglobulines antirabiques + vaccin selon protocole Essen obligatoirement"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "titre": "Herpès Viroses",
+      "flashcards": [
+        {
+          "q": "Quels sont les 8 types de virus herpétiques ?",
+          "r": "HHV1 (HSV-1), HHV2 (HSV-2), HHV3 (VZV), HHV4 (EBV), HHV5 (CMV), HHV6, HHV7, HHV8 (Sarcome de Kaposi)"
+        },
+        {
+          "q": "Quels sont les gîtes de latence des herpesvirus ?",
+          "r": "HSV et VZV : ganglions sensitifs (sacrés et de Gasser). CMV : macrophages. EBV : lymphocytes B. HV6 : glandes salivaires"
+        },
+        {
+          "q": "Quelle est la différence de topographie entre HSV-1 et HSV-2 ?",
+          "r": "HSV-1 : oro-facial (gingivo-stomatite, kératite, encéphalite). HSV-2 : herpès génital. Mais croisements possibles"
+        },
+        {
+          "q": "Quels sont les signes de la gingivo-stomatite aiguë herpétique ?",
+          "r": "Enfant 1-4 ans, dysphagie ++ arrêt alimentation, ulcérations diffuses (muqueuses, lèvres), fièvre 39-40°C, ADP sous angulo-maxillaires"
+        },
+        {
+          "q": "Quelles sont les complications de la kératite herpétique ?",
+          "r": "Opacité définitive de la cornée. Contre-indication aux corticoïdes"
+        },
+        {
+          "q": "Comment se présente l'encéphalite herpétique ?",
+          "r": "Début brutal <48h : fièvre 40°C + céphalées → troubles conscience/coma, crises comitiales, troubles du caractère et mémoire, troubles phasiques, hémiplégie. Mortalité spontanée 80%"
+        },
+        {
+          "q": "Quels sont les facteurs déclenchant les récurrences herpétiques ?",
+          "r": "Stress, menstruations, fatigue, fièvre, infections (méningocoque, pneumocoque, paludisme, grippe)"
+        },
+        {
+          "q": "Quel est le risque de l'herpès génital maternel lors de l'accouchement ?",
+          "r": "Infection néonatale par contamination lors du passage dans la filière génitale (herpes neonatal grave)"
+        },
+        {
+          "q": "Quand faut-il traiter par antiviraux dans l'encéphalite herpétique ?",
+          "r": "Traitement antiviral d'urgence dès la moindre suspicion (aciclovir IV) sans attendre la confirmation diagnostique"
+        },
+        {
+          "q": "Quel est le risque de transmission du VZV pendant la grossesse ?",
+          "r": "Varicelle : risque fœtal surtout en dernière semaine de grossesse. CMV primo-infection = risque infection fœtale grave"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "titre": "Mononucléose Infectieuse (MNI)",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que la MNI ?",
+          "r": "Maladie virale due au virus Epstein-Barr (EBV = HHV4). Représente la forme clinique de la primo-infection symptomatique à EBV"
+        },
+        {
+          "q": "Comment se transmet l'EBV ?",
+          "r": "Directe par salive (maladie du baiser). Rarement : aliments souillés, gouttelettes, transfusion, greffe. Réservoir : sujet séropositif EBV"
+        },
+        {
+          "q": "Quelle est la durée d'incubation de la MNI ?",
+          "r": "4 à 6 semaines (voire plus)"
+        },
+        {
+          "q": "Quels sont les 4 signes cardinaux de la MNI ?",
+          "r": "Fièvre + Angine (érythémato-pultacée ou pseudo-membraneuse) + Polyadénopathies (cervicales postérieures +++) + Splénomégalie"
+        },
+        {
+          "q": "Comment est l'angine dans la MNI ?",
+          "r": "Érythémateuse ou érythémato-pultacée bilatérale, peut être pseudo-membraneuse (fausses membranes respectant la luette et le voile, se détachent facilement)"
+        },
+        {
+          "q": "Quel est le signe provoqué par les aminopénicillines dans la MNI ?",
+          "r": "Éruption morbilliforme au 9ème-11ème jour dans 90% des cas (grande valeur diagnostique, mais n'est PAS une allergie vraie aux β-lactamines)"
+        },
+        {
+          "q": "Quel est le tableau biologique de la MNI ?",
+          "r": "Hyperlymphocytose avec grands lymphocytes hyperbasophiles (LT CD8 cytotoxiques) ± neutropénie"
+        },
+        {
+          "q": "Qu'est-ce que la réaction de Paul-Bunnell-Davidsohn (PBD) ?",
+          "r": "Présence d'IgM anti-VCA en l'absence d'anti-EBNA (qui apparaissent tardivement à 3 mois). IgG anti-VCA et anti-EBNA persistent à vie"
+        },
+        {
+          "q": "Qu'est-ce que le MNI test ?",
+          "r": "Test d'agglutination rapide recherchant IgM agglutinant hématies hétérologues. Positif dans 90% des cas à la fin du 1er mois. Sensibilité 98%"
+        },
+        {
+          "q": "Quelles sont les complications graves de la MNI ?",
+          "r": "Rupture spontanée de la rate, myocardite, asphyxie (œdème VAS), encéphalite, hépatite fulminante, aplasie médullaire"
+        },
+        {
+          "q": "Quel est le traitement de la MNI ?",
+          "r": "Essentiellement symptomatique. Proscrire les aminopénicillines. Corticothérapie (prednisone 1mg/kg/j) si tuméfaction amygdalienne gênante ou complications graves"
+        },
+        {
+          "q": "Comment différencier MNI et diphtérie devant une angine à pseudo-membranes ?",
+          "r": "Diphtérie : membranes adhérentes, grisâtres, étendues, patient non vacciné. MNI : membranes moins adhérentes + adénopathies + splénomégalie"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "titre": "Méningite à Liquide Clair",
+      "flashcards": [
+        {
+          "q": "Quelles sont les caractéristiques du LCR d'une méningite à liquide clair ?",
+          "r": "Clair, pléiocytose modérée <500 cellules/mm3 à prédominance lymphocytaire, hyperprotéinorachie 1-2g/l, glycorachie normale"
+        },
+        {
+          "q": "Quelle est la règle d'or concernant la glycorachie dans les MLC ?",
+          "r": "Toute méningite à liquide clair avec HYPOGLYCORACHIE oriente vers une cause tuberculeuse jusqu'à preuve du contraire"
+        },
+        {
+          "q": "Quelles sont les 3 grandes étiologies des MLC avec hypoglycorachie ?",
+          "r": "1) Méningite tuberculeuse 2) Listériose méningée 3) Méningite bactérienne décapitée"
+        },
+        {
+          "q": "Qu'est-ce qu'une méningite bactérienne décapitée ?",
+          "r": "Méningite bactérienne partiellement traitée par ATB à dose insuffisante ou durée trop courte. LCR : pléiocytose lymphocytes/PN non altérés, hypoglycorachie modérée, examen direct négatif"
+        },
+        {
+          "q": "Quels sont les signes cliniques de la méningite tuberculeuse ?",
+          "r": "Installation subaiguë, AEG, amaigrissement, fièvre prolongée, syndrome méningé peu franc, troubles comportement, signes d'atteinte basilaire (paralysie nerfs crâniens)"
+        },
+        {
+          "q": "Quel est le tableau du LCR dans la méningite tuberculeuse ?",
+          "r": "Pléiocytose lymphocytaire, protéinorachie >2g/L, hypoglycorachie, examen direct rarement positif, culture sur Löwenstein-Jensen (3 prélèvements sur 3 jours), PCR BK"
+        },
+        {
+          "q": "Quelles sont les complications de la méningite tuberculeuse visibles à l'imagerie ?",
+          "r": "Prise de contraste de la base du crâne (arachnoïdite basilaire), hydrocéphalie, zones d'infarctus cérébral, tuberculomes cérébraux"
+        },
+        {
+          "q": "Quel est le traitement de la méningite tuberculeuse ?",
+          "r": "2 ERHZ + 7 RH. E(Ethambutol 15mg/kg/j) + R(Rifampicine 10mg/kg/j) + H(Isoniazide 5mg/kg/j) + Z(Pyrazinamide 30mg/kg/j). Corticoïdes : prednisone 2mg/kg/j × 4 semaines"
+        },
+        {
+          "q": "Quel est le terrain typique de la listériose méningée ?",
+          "r": "Sujet âgé, femme enceinte, immunodéprimé. BGP (Listeria monocytogenes)"
+        },
+        {
+          "q": "Quel est le traitement de la méningite à Listeria ?",
+          "r": "Amoxicilline 200 mg/kg/j pendant 21 jours + gentamicine"
+        },
+        {
+          "q": "Quand faut-il traiter empiriquement sans attendre l'étiologie ?",
+          "r": "Situations d'urgence avec signes de gravité, doute sur méningite bactérienne → ATB probabiliste orienté selon l'âge + antiviral si suspicion MEH"
+        },
+        {
+          "q": "Qu'est-ce que la cryptococcose méningée ?",
+          "r": "Méningite mycosique sur terrain immunodéprimé, subaiguë, syndrome méningé peu marqué. Diagnostic : encre de Chine + culture sur Sabouraud + Ag cryptococcique"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "titre": "Tétanos",
+      "flashcards": [
+        {
+          "q": "Qu'est-ce que le tétanos ?",
+          "r": "Toxi-infection due à Clostridium tetani (bacille anaérobie strict, Gram positif, sporulé). Non contagieuse, non immunisante, déclaration obligatoire, évitable par vaccination"
+        },
+        {
+          "q": "Comment le bacille tétanique produit-il la maladie ?",
+          "r": "Spores → conditions d'anaérobiose (nécrose, ischémie, corps étranger) → germination → sécrétion de tétanospasmine (neurotoxine)"
+        },
+        {
+          "q": "Quel est le mécanisme de la tétanospasmine ?",
+          "r": "Transport rétrograde axonal → moelle épinière → migration transsynaptique → blocage des neurotransmetteurs INHIBITEURS des motoneurones alpha → contractures incontrôlées"
+        },
+        {
+          "q": "Quel est le réservoir du tétanos ?",
+          "r": "Tellurique : sol contaminé par matières fécales d'animaux (chevaux, moutons). Spores très résistantes (plusieurs mois à années)"
+        },
+        {
+          "q": "Quelles sont les portes d'entrée du tétanos ?",
+          "r": "Plaies souillées (même minimes), plaies chroniques/profondes, fractures ouvertes, morsures, ulcères, brûlures, interventions chirurgicales non stériles"
+        },
+        {
+          "q": "Quels sont les groupes à risque ?",
+          "r": "Personnes non/mal vaccinées, milieu rural, agriculteurs, jardiniers, personnes âgées (>90% des cas chez >60 ans), femmes (plus exposées)"
+        },
+        {
+          "q": "Quel est le symptôme inaugural du tétanos ?",
+          "r": "Trismus : contracture des masséters limitant l'ouverture buccale, irréductible, douloureuse, permanente"
+        },
+        {
+          "q": "Quelle est la durée de l'incubation du tétanos ?",
+          "r": "3 à 30 jours (moyenne 8 jours). Plus l'incubation est courte, plus la maladie est sévère"
+        },
+        {
+          "q": "Quelles sont les 3 conditions nécessaires au développement du tétanos ?",
+          "r": "1) Absence de vaccination correcte 2) Introduction de spores dans une effraction cutanée/muqueuse 3) Faible potentiel d'oxydoréduction (tissus nécrosés, ischémie, corps étranger)"
+        },
+        {
+          "q": "Quels sont les différents types de tétanos selon la porte d'entrée ?",
+          "r": "Post-partum, post-abortum, ombilical, chirurgical, iatrogène (injections IM, vaccinoations par scarification)"
+        },
+        {
+          "q": "Quel est le traitement curatif du tétanos (principes) ?",
+          "r": "Immunoglobulines antitétaniques + ATB (pénicilline ou métronidazole) + sédation/myorelaxants + réanimation + traitement de la porte d'entrée"
+        },
+        {
+          "q": "Comment prévenir le tétanos ?",
+          "r": "Vaccination (anatoxine tétanique) très efficace. Mise à jour vaccinale systématique. Soins locaux des plaies. Séro-vaccination si plaie et vaccination insuffisante"
+        }
+      ]
+    }
+  ]
+}
