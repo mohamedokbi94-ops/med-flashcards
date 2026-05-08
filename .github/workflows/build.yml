@@ -1,9 +1,7 @@
 name: Build APK
-
 on:
   push:
     branches: [ main ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,14 +19,12 @@ jobs:
 
       - name: Get dependencies
         run: flutter pub get
-        working-directory: ./tempapp
 
       - name: Build APK
         run: flutter build apk --release
-        working-directory: ./tempapp
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: app-release
-          path: tempapp/build/app/outputs/flutter-apk/app-release.apk
+          path: build/app/outputs/flutter-apk/app-release.apk
