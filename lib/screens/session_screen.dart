@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'dart:async';
 import 'package:flutter/material.dart';
 import '../models/models.dart';
 import '../utils/theme.dart';
@@ -27,6 +28,11 @@ class _SessionScreenState extends State<SessionScreen>
   int _good = 0;
   int _bad = 0;
 
+  // Timer
+  int _seconds = 0;
+  Timer? _timer;
+  bool _timerEnabled = true;
+
   late AnimationController _flipCtrl;
   late Animation<double> _flipAnim;
 
@@ -43,6 +49,19 @@ class _SessionScreenState extends State<SessionScreen>
     _buildQueue();
   }
 
+  void _startTimer() {
+    _timer?.cancel();
+    _seconds = 0;
+    if (!_timerEnabled) return;
+    _timer = Timer.periodic(const Duration(seconds: 1), (_) {
+      if (mounted) setState(() => _seconds++);
+    });
+  }
+
+  void _stopTimer() {
+    _timer?.cancel();
+  }
+
   void _buildQueue() {
     final due = widget.course.dueCards;
     final cards = due.isNotEmpty ? due : List.of(widget.course.cards);
@@ -56,10 +75,12 @@ class _SessionScreenState extends State<SessionScreen>
       _sessionDone = false;
     });
     _flipCtrl.reset();
+    _startTimer();
   }
 
   void _flip() {
     if (_isFlipped) return;
+    _stopTimer();
     setState(() => _isFlipped = true);
     _flipCtrl.forward();
   }
@@ -82,11 +103,11 @@ class _SessionScreenState extends State<SessionScreen>
         _idx++;
         _isFlipped = false;
       });
+      _startTimer();
     }
   }
 
   void _restartHard() {
-    // Rebuild queue with only failed cards
     final hard = widget.course.cards
         .where((c) => c.repetitions == 0 && c.totalReviews > 0)
         .toList();
@@ -101,10 +122,24 @@ class _SessionScreenState extends State<SessionScreen>
       _sessionDone = false;
     });
     _flipCtrl.reset();
+    _startTimer();
+  }
+
+  String get _timerText {
+    final m = _seconds ~/ 60;
+    final s = _seconds % 60;
+    return '${m.toString().padLeft(2, '0')}:${s.toString().padLeft(2, '0')}';
+  }
+
+  Color get _timerColor {
+    if (_seconds < 10) return AppTheme.goodGreen;
+    if (_seconds < 20) return AppTheme.gold;
+    return AppTheme.badRed;
   }
 
   @override
   void dispose() {
+    _timer?.cancel();
     _flipCtrl.dispose();
     super.dispose();
   }
@@ -121,6 +156,24 @@ class _SessionScreenState extends State<SessionScreen>
           icon: const Icon(Icons.arrow_back),
           onPressed: () => Navigator.pop(context),
         ),
+        actions: [
+          // Toggle timer
+          IconButton(
+            icon: Icon(
+              _timerEnabled ? Icons.timer : Icons.timer_off,
+              color: Colors.white,
+            ),
+            tooltip: 'Activer/désactiver le timer',
+            onPressed: () {
+              setState(() => _timerEnabled = !_timerEnabled);
+              if (_timerEnabled) {
+                _startTimer();
+              } else {
+                _stopTimer();
+              }
+            },
+          ),
+        ],
       ),
       body: _sessionDone ? _buildDoneView() : _buildCardView(),
     );
@@ -136,7 +189,6 @@ class _SessionScreenState extends State<SessionScreen>
 
     return Column(
       children: [
-        // Progress bar
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
           child: Column(
@@ -148,6 +200,19 @@ class _SessionScreenState extends State<SessionScreen>
                   Text('${_idx + 1} / $total',
                       style: const TextStyle(
                           fontSize: 12, color: AppTheme.textSecondary)),
+                  // Timer display
+                  if (_timerEnabled && !_isFlipped)
+                    Row(
+                      children: [
+                        Icon(Icons.timer, size: 14, color: _timerColor),
+                        const SizedBox(width: 4),
+                        Text(_timerText,
+                            style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w700,
+                                color: _timerColor)),
+                      ],
+                    ),
                   Row(
                     children: [
                       const Icon(Icons.check, size: 14, color: AppTheme.goodGreen),
@@ -177,7 +242,6 @@ class _SessionScreenState extends State<SessionScreen>
           ),
         ),
 
-        // Card flip area
         Expanded(
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -205,7 +269,6 @@ class _SessionScreenState extends State<SessionScreen>
           ),
         ),
 
-        // Eval buttons (shown after flip)
         AnimatedOpacity(
           opacity: _isFlipped ? 1.0 : 0.0,
           duration: const Duration(milliseconds: 200),
@@ -309,22 +372,18 @@ class _SessionScreenState extends State<SessionScreen>
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Row(
-              children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                  decoration: BoxDecoration(
-                    color: AppTheme.tealSurface,
-                    borderRadius: BorderRadius.circular(20),
-                  ),
-                  child: const Text('RÉPONSE',
-                      style: TextStyle(
-                          fontSize: 10,
-                          fontWeight: FontWeight.w700,
-                          color: AppTheme.teal,
-                          letterSpacing: 1.2)),
-                ),
-              ],
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+              decoration: BoxDecoration(
+                color: AppTheme.tealSurface,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: const Text('RÉPONSE',
+                  style: TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.w700,
+                      color: AppTheme.teal,
+                      letterSpacing: 1.2)),
             ),
             const SizedBox(height: 16),
             Expanded(
@@ -375,7 +434,9 @@ class _SessionScreenState extends State<SessionScreen>
     final pct = total > 0 ? ((_good / total) * 100).round() : 0;
     final tomorrow = DateTime.now().add(const Duration(days: 1));
     final dueCount = widget.course.cards
-        .where((c) => c.dueDate.isAfter(DateTime.now()) && c.dueDate.isBefore(tomorrow))
+        .where((c) =>
+            c.dueDate.isAfter(DateTime.now()) &&
+            c.dueDate.isBefore(tomorrow))
         .length;
 
     return SingleChildScrollView(
@@ -417,26 +478,11 @@ class _SessionScreenState extends State<SessionScreen>
             ],
           ),
           const SizedBox(height: 30),
-          _actionBtn(
-            label: 'Recommencer les cartes difficiles',
-            icon: Icons.refresh,
-            onTap: _restartHard,
-            primary: false,
-          ),
+          _actionBtn(label: 'Recommencer les cartes difficiles', icon: Icons.refresh, onTap: _restartHard, primary: false),
           const SizedBox(height: 12),
-          _actionBtn(
-            label: 'Nouvelle session complète',
-            icon: Icons.play_arrow,
-            onTap: _buildQueue,
-            primary: true,
-          ),
+          _actionBtn(label: 'Nouvelle session complète', icon: Icons.play_arrow, onTap: _buildQueue, primary: true),
           const SizedBox(height: 12),
-          _actionBtn(
-            label: 'Retour aux cours',
-            icon: Icons.arrow_back,
-            onTap: () => Navigator.pop(context),
-            primary: false,
-          ),
+          _actionBtn(label: 'Retour aux cours', icon: Icons.arrow_back, onTap: () => Navigator.pop(context), primary: false),
         ],
       ),
     );
@@ -453,27 +499,16 @@ class _SessionScreenState extends State<SessionScreen>
         ),
         child: Column(
           children: [
-            Text(value,
-                style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.w700,
-                    color: color)),
+            Text(value, style: TextStyle(fontSize: 24, fontWeight: FontWeight.w700, color: color)),
             const SizedBox(height: 4),
-            Text(label,
-                style: const TextStyle(
-                    fontSize: 11, color: AppTheme.textSecondary)),
+            Text(label, style: const TextStyle(fontSize: 11, color: AppTheme.textSecondary)),
           ],
         ),
       ),
     );
   }
 
-  Widget _actionBtn({
-    required String label,
-    required IconData icon,
-    required VoidCallback onTap,
-    required bool primary,
-  }) {
+  Widget _actionBtn({required String label, required IconData icon, required VoidCallback onTap, required bool primary}) {
     return SizedBox(
       width: double.infinity,
       child: Material(
@@ -486,21 +521,14 @@ class _SessionScreenState extends State<SessionScreen>
             padding: const EdgeInsets.symmetric(vertical: 14),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
-              border: Border.all(
-                  color: primary ? AppTheme.teal : AppTheme.border),
+              border: Border.all(color: primary ? AppTheme.teal : AppTheme.border),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(icon,
-                    size: 18,
-                    color: primary ? Colors.white : AppTheme.textPrimary),
+                Icon(icon, size: 18, color: primary ? Colors.white : AppTheme.textPrimary),
                 const SizedBox(width: 8),
-                Text(label,
-                    style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                        color: primary ? Colors.white : AppTheme.textPrimary)),
+                Text(label, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: primary ? Colors.white : AppTheme.textPrimary)),
               ],
             ),
           ),

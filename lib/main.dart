@@ -5,6 +5,7 @@ import 'utils/storage.dart';
 import 'models/models.dart';
 import 'screens/home_screen.dart';
 import 'screens/antibiotic_screen.dart';
+import 'screens/add_card_screen.dart';
 
 void main() {
   runApp(const MedFlashcardsApp());
@@ -53,10 +54,8 @@ class _RootPageState extends State<RootPage> {
     return Scaffold(
       backgroundColor: AppTheme.bg,
       appBar: AppBar(
-        title: const Text(
-          'Maladies Infectieuses',
-          style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600),
-        ),
+        title: const Text('Maladies Infectieuses',
+            style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600)),
         backgroundColor: AppTheme.navy,
         actions: [
           IconButton(
@@ -67,13 +66,13 @@ class _RootPageState extends State<RootPage> {
         ],
       ),
       body: !_loaded
-          ? const Center(
-              child: CircularProgressIndicator(color: AppTheme.teal))
+          ? const Center(child: CircularProgressIndicator(color: AppTheme.teal))
           : IndexedStack(
               index: _tab,
               children: [
                 HomeScreen(courses: _courses),
                 const AntibioticScreen(),
+                AddCardScreen(courses: _courses),
               ],
             ),
       bottomNavigationBar: NavigationBar(
@@ -92,6 +91,11 @@ class _RootPageState extends State<RootPage> {
             selectedIcon: Icon(Icons.medication, color: AppTheme.teal),
             label: 'Antibiotiques',
           ),
+          NavigationDestination(
+            icon: Icon(Icons.add_circle_outline),
+            selectedIcon: Icon(Icons.add_circle, color: AppTheme.teal),
+            label: 'Ajouter',
+          ),
         ],
       ),
     );
@@ -102,8 +106,7 @@ class _RootPageState extends State<RootPage> {
       context: context,
       builder: (_) => AlertDialog(
         title: const Text('Réinitialiser la progression ?'),
-        content: const Text(
-            'Toutes vos données de révision (intervalles SM-2, statistiques) seront effacées.'),
+        content: const Text('Toutes vos données de révision seront effacées.'),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
