@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "844976865785",
+    "project_id": "med-flashcards-f2782",
+    "storage_bucket": "med-flashcards-f2782.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844976865785:android:2509131770f7883fe63d28",
+        "android_client_info": {
+          "package_name": "com.example.med_flashcards"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKFl-G9UMPPx-kZm8rL8pY5VaZbrlD3KQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
