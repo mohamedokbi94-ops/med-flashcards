@@ -53,7 +53,7 @@ jobs:
           tag_name: v${{ steps.version.outputs.VERSION }}
           name: Version ${{ steps.version.outputs.VERSION }}
           body: |
-            Mise à jour automatique — ${{ github.event.head_commit.message }}
+            ${{ github.event.head_commit.message }}
           files: build/app/outputs/flutter-apk/app-release.apk
           make_latest: true
         env:
