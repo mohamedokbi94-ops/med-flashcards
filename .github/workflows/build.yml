@@ -17,6 +17,23 @@ jobs:
         with:
           flutter-version: '3.24.5'
 
+      - name: Create Flutter template for resources
+        run: |
+          flutter create --org com.example --project-name temp_res /tmp/tempapp
+          cp -r /tmp/tempapp/android/app/src/main/res android/app/src/main/
+          cp -r /tmp/tempapp/android/app/src/main/kotlin android/app/src/main/
+          cp /tmp/tempapp/android/app/build.gradle android/app/build.gradle
+          cp /tmp/tempapp/android/build.gradle android/build.gradle
+          cp /tmp/tempapp/android/settings.gradle android/settings.gradle
+          cp /tmp/tempapp/android/gradle.properties android/gradle.properties
+          cp -r /tmp/tempapp/android/gradle android/
+          cp /tmp/tempapp/android/gradlew android/
+          cp /tmp/tempapp/android/gradlew.bat android/
+          sed -i 's/temp_res/med_flashcards/g' android/app/build.gradle
+          sed -i 's/temp_res/med_flashcards/g' android/app/src/main/AndroidManifest.xml
+          mv android/app/src/main/kotlin/com/example/temp_res android/app/src/main/kotlin/com/example/med_flashcards
+          sed -i 's/temp_res/med_flashcards/g' android/app/src/main/kotlin/com/example/med_flashcards/MainActivity.kt
+
       - name: Get dependencies
         run: flutter pub get
 
