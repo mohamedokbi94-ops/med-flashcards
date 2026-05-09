@@ -44,3 +44,26 @@ class AppTheme {
         useMaterial3: true,
       );
 }
+
+  static final ThemeData darkTheme = ThemeData(
+    brightness: Brightness.dark,
+    fontFamily: 'SF Pro Display',
+    scaffoldBackgroundColor: const Color(0xFF0F1117),
+    colorScheme: const ColorScheme.dark(
+      primary: teal,
+      secondary: teal,
+      surface: Color(0xFF1C1F2E),
+    ),
+    navigationBarTheme: NavigationBarThemeData(
+      backgroundColor: const Color(0xFF1C1F2E),
+      indicatorColor: teal.withOpacity(0.2),
+      labelTextStyle: WidgetStateProperty.all(
+        const TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
+      ),
+    ),
+    appBarTheme: const AppBarTheme(
+      backgroundColor: navy,
+      foregroundColor: Colors.white,
+      elevation: 0,
+    ),
+  );
