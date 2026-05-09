@@ -1,47 +1,34 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'utils/theme.dart';
 import 'utils/data.dart';
 import 'utils/storage.dart';
 import 'utils/update_service.dart';
-import 'utils/firebase_service.dart';
 import 'models/models.dart';
 import 'screens/home_screen.dart';
 import 'screens/antibiotic_screen.dart';
 import 'screens/add_card_screen.dart';
-import 'screens/auth_screen.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+void main() {
   runApp(const MedFlashcardsApp());
 }
 
 class MedFlashcardsApp extends StatelessWidget {
   const MedFlashcardsApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Maladies Infectieuses',
       theme: AppTheme.theme,
       debugShowCheckedModeBanner: false,
-      home: StreamBuilder<User?>(
-        stream: FirebaseService.authStateChanges,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Scaffold(body: Center(
-                child: CircularProgressIndicator(color: AppTheme.teal)));
-          }
-          return snapshot.hasData ? const RootPage() : const AuthScreen();
-        },
-      ),
+      home: const RootPage(),
     );
   }
 }
 
 class RootPage extends StatefulWidget {
   const RootPage({super.key});
+
   @override
   State<RootPage> createState() => _RootPageState();
 }
@@ -59,8 +46,6 @@ class _RootPageState extends State<RootPage> {
   }
 
   Future<void> _loadProgress() async {
-    await FirebaseService.loadProgress(_courses);
-    await FirebaseService.loadCustomCards(_courses);
     await StorageService.loadProgress(_courses);
     if (mounted) {
       setState(() => _loaded = true);
@@ -72,8 +57,6 @@ class _RootPageState extends State<RootPage> {
 
   @override
   Widget build(BuildContext context) {
-    final userName = FirebaseService.currentUser?.displayName ?? 'Utilisateur';
-    final userEmail = FirebaseService.userEmail ?? '';
     return Scaffold(
       backgroundColor: AppTheme.bg,
       appBar: AppBar(
@@ -81,33 +64,22 @@ class _RootPageState extends State<RootPage> {
             style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600)),
         backgroundColor: AppTheme.navy,
         actions: [
-          PopupMenuButton(
-            icon: const Icon(Icons.account_circle, color: Colors.white),
+          PopupMenuButton<String>(
+            icon: const Icon(Icons.more_vert, color: Colors.white),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            itemBuilder: (_) => [
-              PopupMenuItem(enabled: false, child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(userName, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 14)),
-                  Text(userEmail, style: const TextStyle(fontSize: 12, color: AppTheme.textSecondary)),
-                ],
-              )),
-              const PopupMenuDivider(),
-              PopupMenuItem(
-                onTap: () => _confirmReset(context),
-                child: const Row(children: [
-                  Icon(Icons.delete_outline, size: 18, color: AppTheme.badRed),
-                  SizedBox(width: 10),
-                  Text('Réinitialiser', style: TextStyle(color: AppTheme.badRed)),
-                ]),
-              ),
-              PopupMenuItem(
-                onTap: () async => await FirebaseService.signOut(),
-                child: const Row(children: [
-                  Icon(Icons.logout, size: 18),
-                  SizedBox(width: 10),
-                  Text('Déconnexion'),
-                ]),
+            onSelected: (value) {
+              if (value == 'reset') _confirmReset(context);
+            },
+            itemBuilder: (_) => <PopupMenuEntry<String>>[
+              const PopupMenuItem<String>(
+                value: 'reset',
+                child: Row(
+                  children: [
+                    Icon(Icons.delete_outline, size: 18, color: Colors.red),
+                    SizedBox(width: 10),
+                    Text('Réinitialiser', style: TextStyle(color: Colors.red)),
+                  ],
+                ),
               ),
             ],
           ),
@@ -115,43 +87,65 @@ class _RootPageState extends State<RootPage> {
       ),
       body: !_loaded
           ? const Center(child: CircularProgressIndicator(color: AppTheme.teal))
-          : IndexedStack(index: _tab, children: [
-              HomeScreen(courses: _courses),
-              const AntibioticScreen(),
-              AddCardScreen(courses: _courses),
-            ]),
+          : IndexedStack(
+              index: _tab,
+              children: [
+                HomeScreen(courses: _courses),
+                const AntibioticScreen(),
+                AddCardScreen(courses: _courses),
+              ],
+            ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: _tab,
         onDestinationSelected: (i) => setState(() => _tab = i),
         backgroundColor: AppTheme.bgCard,
         indicatorColor: AppTheme.tealSurface,
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.style_outlined),
-              selectedIcon: Icon(Icons.style, color: AppTheme.teal), label: 'Flashcards'),
-          NavigationDestination(icon: Icon(Icons.medication_outlined),
-              selectedIcon: Icon(Icons.medication, color: AppTheme.teal), label: 'Antibiotiques'),
-          NavigationDestination(icon: Icon(Icons.add_circle_outline),
-              selectedIcon: Icon(Icons.add_circle, color: AppTheme.teal), label: 'Ajouter'),
+          NavigationDestination(
+            icon: Icon(Icons.style_outlined),
+            selectedIcon: Icon(Icons.style, color: AppTheme.teal),
+            label: 'Flashcards',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.medication_outlined),
+            selectedIcon: Icon(Icons.medication, color: AppTheme.teal),
+            label: 'Antibiotiques',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.add_circle_outline),
+            selectedIcon: Icon(Icons.add_circle, color: AppTheme.teal),
+            label: 'Ajouter',
+          ),
         ],
       ),
     );
   }
 
   void _confirmReset(BuildContext context) {
-    showDialog(context: context, builder: (_) => AlertDialog(
-      title: const Text('Réinitialiser la progression ?'),
-      content: const Text('Toutes vos données seront effacées.'),
-      actions: [
-        TextButton(onPressed: () => Navigator.pop(context), child: const Text('Annuler')),
-        TextButton(
-          onPressed: () async {
-            await StorageService.clearProgress();
-            setState(() { _courses = buildCourses(); _loaded = true; });
-            if (context.mounted) Navigator.pop(context);
-          },
-          child: const Text('Réinitialiser', style: TextStyle(color: AppTheme.badRed)),
-        ),
-      ],
-    ));
+    showDialog(
+      context: context,
+      builder: (_) => AlertDialog(
+        title: const Text('Réinitialiser la progression ?'),
+        content: const Text('Toutes vos données de révision seront effacées.'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Annuler'),
+          ),
+          TextButton(
+            onPressed: () async {
+              await StorageService.clearProgress();
+              setState(() {
+                _courses = buildCourses();
+                _loaded = true;
+              });
+              if (context.mounted) Navigator.pop(context);
+            },
+            child: const Text('Réinitialiser',
+                style: TextStyle(color: Colors.red)),
+          ),
+        ],
+      ),
+    );
   }
 }
