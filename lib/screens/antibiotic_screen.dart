@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../models/models.dart';
 import '../utils/data.dart';
 import '../utils/theme.dart';
-import '../utils/data.dart';
 
 class AntibioticScreen extends StatefulWidget {
   const AntibioticScreen({super.key});
@@ -13,7 +12,7 @@ class AntibioticScreen extends StatefulWidget {
 
 class _AntibioticScreenState extends State<AntibioticScreen> {
   String _query = '';
-  String _filter = 'all'; // 'all', 'bacterial', 'parasitic', 'viral'
+  String _filter = 'all';
   int? _expandedIdx;
 
   List<AntibioticEntry> get _filtered {
@@ -33,7 +32,6 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
     final items = _filtered;
     return Column(
       children: [
-        // Search bar
         Padding(
           padding: const EdgeInsets.fromLTRB(16, 14, 16, 8),
           child: TextField(
@@ -63,8 +61,6 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
             ),
           ),
         ),
-
-        // Category filter chips
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
@@ -80,8 +76,6 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
             ],
           ),
         ),
-
-        // Table entries
         Expanded(
           child: items.isEmpty
               ? const Center(
@@ -115,8 +109,7 @@ class _AntibioticScreenState extends State<AntibioticScreen> {
         decoration: BoxDecoration(
           color: selected ? AppTheme.navy : AppTheme.bgCard,
           borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-              color: selected ? AppTheme.navy : AppTheme.border),
+          border: Border.all(color: selected ? AppTheme.navy : AppTheme.border),
         ),
         child: Text(label,
             style: TextStyle(
@@ -141,40 +134,28 @@ class _EntryCard extends StatelessWidget {
 
   Color get _catColor {
     switch (entry.category) {
-      case 'bacterial':
-        return AppTheme.categoryBact;
-      case 'parasitic':
-        return AppTheme.categoryPara;
-      case 'viral':
-        return AppTheme.categoryViral;
-      default:
-        return AppTheme.textSecondary;
+      case 'bacterial': return AppTheme.categoryBact;
+      case 'parasitic': return AppTheme.categoryPara;
+      case 'viral': return AppTheme.categoryViral;
+      default: return AppTheme.textSecondary;
     }
   }
 
   Color get _catBg {
     switch (entry.category) {
-      case 'bacterial':
-        return AppTheme.categoryBactBg;
-      case 'parasitic':
-        return AppTheme.categoryParaBg;
-      case 'viral':
-        return AppTheme.categoryViralBg;
-      default:
-        return AppTheme.border;
+      case 'bacterial': return AppTheme.categoryBactBg;
+      case 'parasitic': return AppTheme.categoryParaBg;
+      case 'viral': return AppTheme.categoryViralBg;
+      default: return AppTheme.border;
     }
   }
 
   String get _catLabel {
     switch (entry.category) {
-      case 'bacterial':
-        return 'Bact';
-      case 'parasitic':
-        return 'Para';
-      case 'viral':
-        return 'Viral';
-      default:
-        return '';
+      case 'bacterial': return 'Bact';
+      case 'parasitic': return 'Para';
+      case 'viral': return 'Viral';
+      default: return '';
     }
   }
 
@@ -188,19 +169,9 @@ class _EntryCard extends StatelessWidget {
         border: Border.all(
           color: isExpanded ? AppTheme.teal.withOpacity(0.4) : AppTheme.border,
         ),
-        boxShadow: isExpanded
-            ? [
-                BoxShadow(
-                  color: AppTheme.teal.withOpacity(0.06),
-                  blurRadius: 8,
-                  offset: const Offset(0, 2),
-                )
-              ]
-            : null,
       ),
       child: Column(
         children: [
-          // Header (always visible)
           InkWell(
             borderRadius: BorderRadius.circular(12),
             onTap: onTap,
@@ -246,8 +217,6 @@ class _EntryCard extends StatelessWidget {
               ),
             ),
           ),
-
-          // Expandable details
           if (isExpanded) ...[
             const Divider(height: 1, color: AppTheme.border),
             Padding(
@@ -313,9 +282,7 @@ class _EntryCard extends StatelessWidget {
         Expanded(
           child: Text(value,
               style: const TextStyle(
-                  fontSize: 12,
-                  color: AppTheme.textSecondary,
-                  height: 1.4)),
+                  fontSize: 12, color: AppTheme.textSecondary, height: 1.4)),
         ),
       ],
     );
