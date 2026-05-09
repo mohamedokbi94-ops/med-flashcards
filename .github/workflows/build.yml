@@ -3,6 +3,9 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -41,11 +44,21 @@ jobs:
       - name: Get version
         id: version
         run: |
-          VERSION=$(grep 'version:' pubspec.yaml | sed 's/version: //' | tr -d ' ')
+          VERSION=$(grep '^version:' pubspec.yaml | sed 's/version: //' | tr -d ' ' | cut -d'+' -f1)
+          BUILD=$(grep '^version:' pubspec.yaml | sed 's/version: //' | tr -d ' ' | cut -d'+' -f2)
           echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          echo "BUILD=$BUILD" >> $GITHUB_OUTPUT
+          echo "TAG=v$VERSION+$BUILD" >> $GITHUB_OUTPUT
 
       - name: Build APK
         run: flutter build apk --release
+
+      - name: Delete existing release if exists
+        run: |
+          gh release delete "v${{ steps.version.outputs.VERSION }}" --yes 2>/dev/null || true
+          git push --delete origin "v${{ steps.version.outputs.VERSION }}" 2>/dev/null || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
