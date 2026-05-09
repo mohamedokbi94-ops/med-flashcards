@@ -55,6 +55,34 @@ class _RootPageState extends State<RootPage> {
     }
   }
 
+  void _confirmReset(BuildContext ctx) {
+    showDialog(
+      context: ctx,
+      builder: (_) => AlertDialog(
+        title: const Text('Réinitialiser la progression ?'),
+        content: const Text('Toutes vos données seront effacées.'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text('Annuler'),
+          ),
+          TextButton(
+            onPressed: () async {
+              await StorageService.clearProgress();
+              setState(() {
+                _courses = buildCourses();
+                _loaded = true;
+              });
+              if (ctx.mounted) Navigator.pop(ctx);
+            },
+            child: const Text('Réinitialiser',
+                style: TextStyle(color: Colors.red)),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,29 +92,16 @@ class _RootPageState extends State<RootPage> {
             style: TextStyle(fontSize: 17, fontWeight: FontWeight.w600)),
         backgroundColor: AppTheme.navy,
         actions: [
-          PopupMenuButton<String>(
-            icon: const Icon(Icons.more_vert, color: Colors.white),
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-            onSelected: (value) {
-              if (value == 'reset') _confirmReset(context);
-            },
-            itemBuilder: (_) => <PopupMenuEntry<String>>[
-              const PopupMenuItem<String>(
-                value: 'reset',
-                child: Row(
-                  children: [
-                    Icon(Icons.delete_outline, size: 18, color: Colors.red),
-                    SizedBox(width: 10),
-                    Text('Réinitialiser', style: TextStyle(color: Colors.red)),
-                  ],
-                ),
-              ),
-            ],
+          IconButton(
+            icon: const Icon(Icons.delete_outline, color: Colors.white),
+            tooltip: 'Réinitialiser',
+            onPressed: () => _confirmReset(context),
           ),
         ],
       ),
       body: !_loaded
-          ? const Center(child: CircularProgressIndicator(color: AppTheme.teal))
+          ? const Center(
+              child: CircularProgressIndicator(color: AppTheme.teal))
           : IndexedStack(
               index: _tab,
               children: [
@@ -115,34 +130,6 @@ class _RootPageState extends State<RootPage> {
             icon: Icon(Icons.add_circle_outline),
             selectedIcon: Icon(Icons.add_circle, color: AppTheme.teal),
             label: 'Ajouter',
-          ),
-        ],
-      ),
-    );
-  }
-
-  void _confirmReset(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (_) => AlertDialog(
-        title: const Text('Réinitialiser la progression ?'),
-        content: const Text('Toutes vos données de révision seront effacées.'),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(context),
-            child: const Text('Annuler'),
-          ),
-          TextButton(
-            onPressed: () async {
-              await StorageService.clearProgress();
-              setState(() {
-                _courses = buildCourses();
-                _loaded = true;
-              });
-              if (context.mounted) Navigator.pop(context);
-            },
-            child: const Text('Réinitialiser',
-                style: TextStyle(color: Colors.red)),
           ),
         ],
       ),
