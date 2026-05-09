@@ -37,6 +37,10 @@ jobs:
           sed -i 's/temp_res/med_flashcards/g' android/app/src/main/AndroidManifest.xml
           mv android/app/src/main/kotlin/com/example/temp_res android/app/src/main/kotlin/com/example/med_flashcards
           sed -i 's/temp_res/med_flashcards/g' android/app/src/main/kotlin/com/example/med_flashcards/MainActivity.kt
+          sed -i 's/minSdk flutter.minSdkVersion/minSdk 23/' android/app/build.gradle
+          sed -i 's/minSdkVersion = flutter.minSdkVersion/minSdkVersion = 23/' android/app/build.gradle
+          sed -i "s/minSdkVersion = flutter.minSdkVersion/minSdkVersion = 23/" android/app/build.gradle
+          sed -i "s/minSdk flutter.minSdkVersion/minSdk 23/" android/app/build.gradle
 
       - name: Get dependencies
         run: flutter pub get
