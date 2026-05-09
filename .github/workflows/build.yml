@@ -45,15 +45,12 @@ jobs:
         id: version
         run: |
           VERSION=$(grep '^version:' pubspec.yaml | sed 's/version: //' | tr -d ' ' | cut -d'+' -f1)
-          BUILD=$(grep '^version:' pubspec.yaml | sed 's/version: //' | tr -d ' ' | cut -d'+' -f2)
           echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
-          echo "BUILD=$BUILD" >> $GITHUB_OUTPUT
-          echo "TAG=v$VERSION+$BUILD" >> $GITHUB_OUTPUT
 
       - name: Build APK
         run: flutter build apk --release
 
-      - name: Delete existing release if exists
+      - name: Delete old release
         run: |
           gh release delete "v${{ steps.version.outputs.VERSION }}" --yes 2>/dev/null || true
           git push --delete origin "v${{ steps.version.outputs.VERSION }}" 2>/dev/null || true
@@ -65,8 +62,7 @@ jobs:
         with:
           tag_name: v${{ steps.version.outputs.VERSION }}
           name: Version ${{ steps.version.outputs.VERSION }}
-          body: |
-            ${{ github.event.head_commit.message }}
+          body: ${{ github.event.head_commit.message }}
           files: build/app/outputs/flutter-apk/app-release.apk
           make_latest: true
         env:

@@ -64,7 +64,8 @@ class _AuthScreenState extends State<AuthScreen>
       _snack('Les mots de passe ne correspondent pas'); return;
     }
     setState(() => _loading = true);
-    final err = await FirebaseService.signUp(_signUpEmail.text, _signUpPassword.text, _signUpName.text);
+    final err = await FirebaseService.signUp(
+      _signUpEmail.text, _signUpPassword.text, _signUpName.text);
     setState(() => _loading = false);
     if (err != null) _snack(err);
     else _snack('Compte créé !', error: false);
@@ -88,22 +89,30 @@ class _AuthScreenState extends State<AuthScreen>
             const SizedBox(height: 40),
             Container(
               width: 80, height: 80,
-              decoration: BoxDecoration(color: AppTheme.navy, borderRadius: BorderRadius.circular(20)),
-              child: const Icon(Icons.medical_information, color: Colors.white, size: 44),
+              decoration: BoxDecoration(
+                color: AppTheme.navy,
+                borderRadius: BorderRadius.circular(20)),
+              child: const Icon(Icons.medical_information,
+                  color: Colors.white, size: 44),
             ),
             const SizedBox(height: 16),
             const Text('Maladies Infectieuses',
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: AppTheme.navy)),
+                style: TextStyle(fontSize: 22,
+                    fontWeight: FontWeight.w700, color: AppTheme.navy)),
             const SizedBox(height: 6),
             const Text('Connectez-vous pour sauvegarder votre progression',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 13, color: AppTheme.textSecondary)),
             const SizedBox(height: 32),
             Container(
-              decoration: BoxDecoration(color: AppTheme.border, borderRadius: BorderRadius.circular(12)),
+              decoration: BoxDecoration(
+                color: AppTheme.border,
+                borderRadius: BorderRadius.circular(12)),
               child: TabBar(
                 controller: _tabCtrl,
-                indicator: BoxDecoration(color: AppTheme.navy, borderRadius: BorderRadius.circular(10)),
+                indicator: BoxDecoration(
+                  color: AppTheme.navy,
+                  borderRadius: BorderRadius.circular(10)),
                 labelColor: Colors.white,
                 unselectedLabelColor: AppTheme.textSecondary,
                 dividerColor: Colors.transparent,
@@ -125,7 +134,8 @@ class _AuthScreenState extends State<AuthScreen>
   }
 
   Widget _buildSignIn() => Column(children: [
-    _field('Email', _signInEmail, Icons.email_outlined, keyboardType: TextInputType.emailAddress),
+    _field('Email', _signInEmail, Icons.email_outlined,
+        keyboardType: TextInputType.emailAddress),
     const SizedBox(height: 14),
     _field('Mot de passe', _signInPassword, Icons.lock_outline,
         isPassword: true, isVisible: _signInPwVisible,
@@ -143,13 +153,15 @@ class _AuthScreenState extends State<AuthScreen>
   Widget _buildSignUp() => Column(children: [
     _field('Nom complet', _signUpName, Icons.person_outline),
     const SizedBox(height: 12),
-    _field('Email', _signUpEmail, Icons.email_outlined, keyboardType: TextInputType.emailAddress),
+    _field('Email', _signUpEmail, Icons.email_outlined,
+        keyboardType: TextInputType.emailAddress),
     const SizedBox(height: 12),
     _field('Mot de passe', _signUpPassword, Icons.lock_outline,
         isPassword: true, isVisible: _signUpPwVisible,
         onToggle: () => setState(() => _signUpPwVisible = !_signUpPwVisible)),
     const SizedBox(height: 12),
-    _field('Confirmer', _signUpConfirm, Icons.lock_outline, isPassword: true, isVisible: _signUpPwVisible),
+    _field('Confirmer', _signUpConfirm, Icons.lock_outline,
+        isPassword: true, isVisible: _signUpPwVisible),
     const SizedBox(height: 20),
     _submitBtn('Créer un compte', _signUp),
   ]);
@@ -193,7 +205,8 @@ class _AuthScreenState extends State<AuthScreen>
       child: _loading
           ? const SizedBox(width: 20, height: 20,
               child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
-          : Text(label, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
+          : Text(label, style: const TextStyle(
+              fontSize: 15, fontWeight: FontWeight.w700)),
     ),
   );
 }
