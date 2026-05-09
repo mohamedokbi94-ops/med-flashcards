@@ -39,6 +39,7 @@ jobs:
           sed -i 's/temp_res/med_flashcards/g' android/app/build.gradle
           sed -i 's/flutter.minSdkVersion/23/' android/app/build.gradle
           sed -i 's/minSdk 21/minSdk 23/' android/app/build.gradle
+          echo "minSdk value:"
           grep minSdk android/app/build.gradle
 
       - name: Get dependencies
